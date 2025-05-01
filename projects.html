@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="description" content="">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>Research Agenda</title>
+
+  <!-- CSS -->
+  <link rel="shortcut icon" href="/assets/favicon.ico">
+  <link rel="stylesheet" href="/vendors/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="/vendors/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="/vendors/fontawesome/v5/css/all.min.css" />
+  <link rel="stylesheet" href="/vendors/flaticon/flaticon.css" />
+  <link rel="stylesheet" href="/vendors/owl-carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+  <body>
+  	<header class="header_area">
+  <div class="main_menu">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container box_1620">
+        <a class="navbar-brand logo_h" href="/index.html"><img src="/assets/img/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+          
+          <ul class="nav navbar-nav menu_nav justify-content-end">
+            <li class="nav-item "><a class="nav-link" href="/index.html">Home</a></li>
+            <li class="nav-item "><a class="nav-link" href="/team.html">People</a></li>
+            <li class="nav-item "><a class="nav-link" href="/news.html">News</a></li>
+            <li class="nav-item "><a class="nav-link" href="/pubs.html">Publications</a>
+            <li class="nav-item "><a class="nav-link" href="/projects.html">Projects</a></li>
+            <li class="nav-item "><a class="nav-link" href="/software.html">Software</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://orderlab.io/reading-group/current" target="_blank">Reading</a></li>
+            <li class="nav-item "><a class="nav-link" href="/join.html">Join</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+		<main class="side-main">
+      <section class="hero-banner mb-30px">
+      <div class="container">
+        <div class="hero-banner--sm__content">
+          <h1>Research Agenda</h1>
+        </div>
+      </div>
+      </section>
+      <!--================ End banner =================-->
+  		<section class="section-margin">
+  <div class="container">
+    <div class="section-intro pb-85px text-center">
+      <h2 class="section-intro__title">Overview</h2>
+    </div>
+    <p>Currently, we have two main lines of investigations. One line is related to rethink availability and fault tolerance in cloud systems.
+    The other is on defensive mobile operating systems to tolerate misbehaving apps.</p>
+  </div>
+</section>
+
+<section class="section-padding bg-magnolia">
+  <div class="container">
+    <div class="section-intro pb-85px text-center">
+      <h3 class="section-intro__title">Towards gray-tolerant cloud systems</h3>
+    </div>
+    <div class="project card-block">
+      <h4 class="card-title">Generating watchdogs to localize gray failure</h4>
+      <div class="card-text">
+        <div class="row">
+          <div class="col-md-3">
+            <img class="project-img" src="/assets/img/project/watchdog.jpg" />
+          </div>
+          <div class="col-md-9">
+            <p>In this work, we advocate that modern software needs intrinsic failure detectors that 
+              are tailored to individual systems and can detect anomalies within a process at finer 
+              granularity. We particularly advocate a notion of intrinsic software watchdogs and propose 
+              an abstraction for it. Among the different styles of watchdogs, we believe watchdogs 
+              that imitate the main program can provide the best combination of completeness, accuracy 
+              and localization for detecting gray failures.
+            </p>
+            <p>
+              We write a position paper on the watchdog abstraction and an early 
+              exploration for automatically generating mimic-type watchdogs. This 
+              <a href="/paper/watchdog-hostos19-preprint.pdf">paper</a> is published at 
+              <a href="https://hotos19.sigops.org/">HotOS 2019</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project card-block">
+      <h4 class="card-title">Capturing observability to detect gray failures</h4>
+      <div class="card-text">
+        <div class="row">
+          <div class="col-md-3">
+            <img class="project-img" src="/assets/img/project/panorama.jpg" />
+          </div>
+          <div class="col-md-9">
+            <p>In this work, we build on insights from our position paper, particularly
+              that the key trait of gray failure is a form of differential observability.
+              We find that in a highly-interactive cloud system, while gray failure is subtle
+              and ambiguous by itself, the "requesters" in the system often observe the
+              failure symptoms. We build a tool, <b>Panorama</b>, that uses program analysis 
+              and AOP instrumentation to systematically place observability hooks in a system 
+              component, which will report gray failure in other components at runtime.
+            </p>
+            <p>
+              We write a paper that describes this solution and evaluation results. This 
+              <a href="/paper/panorama-osdi18.pdf">paper</a> is published at 
+              <a href="https://www.usenix.org/conference/osdi18">OSDI 2018</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project card-block">
+      <h4 class="card-title">Modeling and defining gray failures</h4>
+      <div class="card-text">
+        <div class="row">
+          <div class="col-md-3">
+            <img class="project-img" src="/assets/img/project/gray_model.png" />
+          </div>
+          <div class="col-md-9">
+            <p>Cloud scale provides the vast resources necessary to replace failed
+              components, but this is useful only if those failures can be detected.
+              For this reason, the major availability breakdowns and performance
+              anomalies we see in cloud environments tend to be caused by subtle
+              underlying faults, i.e., <b>gray failure</b>. In this work, we present 
+              real-world gray failure examples to
+              understand their characteristics and the risks they pose to cloud
+              systems. Drawing from these data points, we make the first
+              attempt to characterize gray failure with a generic model. We find 
+              that the key trait of gray failure is a form of <b>differential observability</b>.
+            </p>
+            <p>
+              We write a position paper to advocate the importance of gray failure problem
+              and describe our model. This <a href="/paper/grayfailure-hotos17.pdf">paper</a> is published at 
+              <a href="https://www.sigops.org/s/conferences/hotos/2017/">HotOS 2017</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<section class="section-margin">
+  <div class="container">
+    <div class="section-intro pb-85px text-center">
+      <h3 class="section-intro__title">Defensive and utilitarian mobile operating systems</h3>
+    </div>
+    <div class="project card-block">
+      <h4 class="card-title">Lease-based, utilitarian resource management</h4>
+      <div class="card-text">
+        <div class="row">
+          <div class="col-md-3">
+            <img class="project-img img-responsive" src="/assets/img/project/leaseos.jpg" />
+          </div>
+          <div class="col-md-9">
+            <p> Existing OS-level solutions to the mobile app energy misbehavior problem is either 
+              libertarian, which allows apps to hold resources until they are explicitly released, 
+              or authoritarian, which monitors resource usages and throttles excessive usage. 
+              While the authoritarian approach helps reduce energy consumption, it prohibits apps 
+              from taking advantage of the resources to do useful work. In this project, we 
+              explore a missing design point---a utilitarian approach. We adapt the lease mechanism 
+              from distributed systems into a mobile OS resource management abstraction to mitigate 
+              app energy bugs and use utility to make informed lease decisions.
+            </p>
+            <p>
+              Our <a href="/paper/leaseos-asplos19.pdf">paper</a> that describes LeaseOS is published at 
+              <a href="https://asplos-conference.org">ASPLOS 2019</a>. It won <span class="text-info">the Best Paper Award</span>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="project card-block">
+      <h4 class="card-title">Defending against immature apps</h4>
+      <div class="card-text">
+        <div class="row">
+          <div class="col-md-3">
+            <img class="project-img img-responsive" src="/assets/img/project/defdroid.png" />
+          </div>
+          <div class="col-md-9">
+            <p>Nowadays there's an app for almost anything. Unfortunately, mobile apps are in general
+              weaker in terms of quality compared to traditional software because of developer inexperiences
+              and limited resources. Many apps, despite having useful features, exhibit immature behaviors,
+            e.g., fast battery drain, agressive updates, excessive cellular data usage, notifications.</p>
+
+            <p>In the <b>DefDroid</b> project, we explore OS-level solutions to
+              address the Disruptive App Behavior (DAB). DefDroid is designed to defensively
+              re-act to app misbehavior by taking corrective actions at runtime without
+            compromising app usability.</p>
+            <p>
+              Our <a href="/paper/defdroid-mobisys16.pdf">paper</a> that describes DefDroid is published at 
+              <a href="https://www.sigmobile.org/mobisys/2016/">MobiSys 2016</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    	<!-- ================ Start footer area ================= -->
+<footer class="footer-area section-gap">
+<div class="container">
+  <div class="footer-bottom row align-items-center text-center text-lg-left">
+    <p class="footer-text m-0 col-lg-8 col-md-12">
+      Copyright &copy; OrderLab 2017-<script>
+ document.write(new Date().getFullYear());
+      </script> All rights reserved. | Last updated 2025-04-30 22:19:44 -0400.
+    </p>
+  </div>
+</div>
+</footer>
+<!-- ================ End footer area ================= -->
+
+		</main>
+    <script src="/vendors/jquery/jquery-3.2.1.min.js"></script>
+<script src="/vendors/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="/vendors/owl-carousel/owl.carousel.min.js"></script>
+<script src="/assets/js/jquery.ajaxchimp.min.js"></script>
+<script src="/assets/js/main.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-19513083-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-19513083-5');
+</script>
+
+  </body>
+</html>

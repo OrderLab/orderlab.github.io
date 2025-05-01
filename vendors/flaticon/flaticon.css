@@ -1,0 +1,64 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 14/12/2019 04:33
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("./fonts/Flaticon.eot");
+  src: url("./fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./fonts/Flaticon.woff2") format("woff2"),
+       url("./fonts/Flaticon.woff") format("woff"),
+       url("./fonts/Flaticon.ttf") format("truetype"),
+       url("./fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: 30px;
+font-style: normal;
+margin-left: 00px;
+}
+
+.flaticon-warning:before { content: "\f100"; }
+.flaticon-document:before { content: "\f101"; }
+.flaticon-add-group:before { content: "\f102"; }
+.flaticon-medal:before { content: "\f103"; }
+.flaticon-gift:before { content: "\f104"; }
+.flaticon-conference:before { content: "\f105"; }
+.flaticon-billboard:before { content: "\f106"; }
+.flaticon-stationery-stacked-papers:before { content: "\f107"; }
+.flaticon-report:before { content: "\f108"; }
+.flaticon-distance:before { content: "\f109"; }
+.flaticon-calendar:before { content: "\f10a"; }
+.flaticon-training:before { content: "\f10b"; }
+.flaticon-student:before { content: "\f10c"; }
+.flaticon-open-book:before { content: "\f10d"; }
+.flaticon-growth:before { content: "\f10e"; }
+.flaticon-woman:before { content: "\f10f"; }
+.flaticon-employee:before { content: "\f110"; }
+.flaticon-female-graduate-student:before { content: "\f111"; }
+.flaticon-graduate-student-avatar:before { content: "\f112"; }
+.flaticon-project-management:before { content: "\f113"; }
+.flaticon-fireworks:before { content: "\f114"; }
+.flaticon-options:before { content: "\f115"; }
+.flaticon-puzzle:before { content: "\f116"; }
+.flaticon-overlap:before { content: "\f117"; }
+.flaticon-conference-2:before { content: "\f118"; }
+.flaticon-student-1:before { content: "\f119"; }
+.flaticon-student-2:before { content: "\f11a"; }
+.flaticon-student-3:before { content: "\f11b"; }
+.flaticon-browser:before { content: "\f11c"; }
+.flaticon-browser-1:before { content: "\f11d"; }
+.flaticon-web:before { content: "\f11e"; }
+.flaticon-server:before { content: "\f11f"; }
