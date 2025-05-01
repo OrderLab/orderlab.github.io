@@ -1,0 +1,798 @@
+.main_title h2 { 
+  text-align: center!important;
+}
+
+.card-feature{
+  padding: 15px 15px;
+  border: 0;
+  border-radius: 0;
+  background: #faf9ff;
+  @include transition;
+
+  &__icon{
+    margin-bottom: 12px;
+
+    i,span{
+      font-size: 30px;
+      color: $primary-color;
+    }
+  }
+
+  &__title{
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  &__subtitle{
+    margin-bottom: 0;
+  }
+
+  &:hover{
+    background: $white;
+    box-shadow: 0px 10px 20px 0px rgba(33, 20, 106, 0.1);
+  }
+}
+
+
+
+.about{
+
+  &__img{
+
+  }
+
+  &__content{
+
+    h2{
+      margin-bottom: 20px;
+    }
+
+    p{
+      margin-bottom: 38px;
+    }
+  }
+}
+
+
+
+.offer-single{
+  margin-bottom: 30px;
+
+  @media(min-width: 991px){
+    margin-bottom: 50px;
+  }
+
+  &__content{
+    border: 0;
+    border-radius: 0;
+    background: #faf9ff;
+    padding: 30px 23px;
+    @include transition;
+
+    h4{
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    p{
+      margin-bottom: 0;
+    }
+
+    &:hover{
+      background: $white;
+      box-shadow: 0px 10px 20px 0px rgba(33, 20, 106, 0.1);
+    }
+  }
+
+  &__icon{
+    display: inline-block;
+    margin-bottom: 15px;
+
+    i,span{
+      font-size: 30px;
+      color: $primary-color;
+    }
+  }
+
+  @media(min-width: 991px){
+    &__img{
+      position: absolute;
+      width: 100%;
+      // height: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      // left: 110px;
+
+      @media(min-width: 1200px){
+        transform: translateY(0);
+        top: 50px;
+        left: 100px;
+      }
+    }
+  }
+
+
+  &-wrapper{
+
+    .offer-single:nth-child(even){
+
+      @media(min-width: 991px){
+        position: relative;
+        top: 40px;
+      }
+    }
+  }
+}
+
+
+.solution{
+
+  &__img{
+    @media(min-width: 1200px){
+      position: relative;
+      left: -60px;
+    }
+  }
+
+  &__content{
+    // max-width: 460px;
+
+    @media(min-width: 1200px){
+      padding-left: 30px;
+      padding-right: 45px;
+    }
+
+    h2{
+      margin-bottom: 20px;
+    }
+
+    p{
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.card-pricing{
+  background: #faf9ff;
+  border-radius: 3px;
+  border: 0;
+  @include transition;
+
+  &:hover{
+    background: $white;
+    box-shadow: 0px 20px 25.5px 4.5px rgba(33, 20, 106, 0.1);
+
+    .button{
+      background: $primary-color;
+      color: $white;
+    }
+  }
+
+  &__header{
+    border-bottom: 1px solid #ebebeb;
+    padding: 40px 7px;
+
+    h4{
+      font-size: 27px;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    p{
+      margin-bottom: 27px;
+    }
+  }
+
+  &__price{
+    font-size: 40px;
+    font-family: $text-font;
+    font-weight: 700;
+    margin: 0;
+
+    @media(min-width: 991px){
+      font-size: 60px;
+    }
+
+    span{
+      font-size: 40px;
+      vertical-align: middle;
+      position: relative;
+      bottom: 5px;
+    }
+  }
+
+  &__list{
+    padding: 30px 8px 25px 8px;
+    border-bottom: 1px solid #ebebeb;
+
+    li{
+      margin-bottom: 12px;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+
+      i,span{
+        font-size: 13px;
+        margin-right: 10px;
+      }
+
+      &.unvalid{
+
+        i,span{
+          color: #f81c1c;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  &__footer{
+    padding: 45px 0;
+  }
+}
+
+/* Start team members css
+============================================================================================ */
+.team_members_area {
+  padding-bottom: 100px;
+  @media (max-width: 991px) {
+    padding-bottom: 40px;
+  }
+}
+
+.single-team-member {
+  margin-bottom: 15px;
+  .thumb {
+    position: relative;
+    .img-team {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+  }
+  .meta-text {
+    background: $offwhite;
+    padding: 15px 15px;
+    box-shadow: 0px 0px 30px rgba(153, 153, 153, 0.13);
+    @include transition();
+    @media (max-width: 991px) {
+      padding: 20px 20px;
+    }
+    background: #ffffff;
+    h4 {
+      font-size: 16px;
+      margin-bottom: 0px;
+    }
+    .designation {
+      font-size: 14px;
+      min-height: 20px;
+      margin-bottom: 5px;
+    }
+    a {
+      font-size: 16px;
+      margin: 0 10px;
+      @include transition();
+    }
+    b {
+      color: #3a414e;
+    }
+  }
+  &:hover {
+    .meta-text {
+      box-shadow: 0px 10px 30px rgba($title-color, 0.15);
+    }
+  }
+}
+/* End team members css
+============================================================================================ */
+
+/* Start Event Area css
+============================================================================================ */
+
+.events_area {
+  padding: 130px 0 100px;
+  background: $title-color;
+  @media (max-width: 991px) {
+    padding: 70px 0;
+  }
+  .event-link {
+    color: $primary-color;
+    font-size: 13px;
+    text-transform: uppercase;
+    img {
+      margin-left: 5px;
+      display: inline-block;
+    }
+  }
+}
+
+.single_event {
+  margin-bottom: 30px;
+  .event_thumb {
+    overflow: hidden;
+    img {
+      @include transition();
+    }
+  }
+  .event_details {
+    background: rgba($title-color, 0.5);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 275px;
+    padding: 30px 25px;
+    color: #ffffff;
+    .date {
+      color: #ffffff;
+      padding-right: 15px;
+      border-right: 2px solid #fff;
+      font-family: $title-font;
+      font-size: 14px;
+      span {
+        display: block;
+        color: $primary-color;
+        font-size: 28px;
+        font-weight: 500;
+      }
+    }
+    .time-location {
+      padding-left: 15px;
+      font-size: 14px;
+      p {
+        margin-bottom: 0px;
+        span {
+          color: #ffffff;
+          font-size: 13px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+    h4 {
+      a {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+/* End Event Area css
+============================================================================================ */
+
+.testimonial{
+  max-width: 970px;
+  margin-right: auto;
+  margin-left: auto;
+
+  &__item{
+    // position: relative;
+  }
+
+  &__img{
+    width: 120px;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 30px;
+    z-index: 5;
+  }
+
+  &__content{
+    background: $white;
+    padding: 50px 10px 35px 10px;
+    position: relative;
+    // border: 1px solid red;
+
+    @media(min-width: 1000px){
+      padding: 50px 20px 35px 20px;
+    }
+
+    h3{
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+
+    p{
+      font-size: 14px;
+    }
+  }
+
+  &__i{
+    font-size: 15px !important;
+    font-style: italic;
+    margin-bottom: 0;
+  }
+
+  &__icon{
+    font-size: 173px;
+    color: rgba(119, 119, 119, 0.1);
+    position: absolute;
+    top : 50%;
+    transform: translateY(-50%);
+    right: 120px;
+  }
+
+  .owl-dots{
+    margin-top: 40px !important;
+
+    .owl-dot{
+
+      span{
+        width: 20px;
+        height: 6px;
+        background: rgb(211, 210, 213);
+        border-radius: 2px;
+        margin: 5px 10px;
+      }
+
+      &.active span{
+        background: $primary-color;
+      }
+    }
+  }
+}
+/* Start news card area css
+============================================================================================ */
+.newscard_area {
+  .owl-carousel {
+    .owl-dots {
+      display: block !important;
+      text-align: center;
+      .owl-dot {
+        height: 10px;
+        width: 10px;
+        background: $white;
+        border-radius: 17px;
+        border: 2px solid #fff;
+        display: inline-block;
+        margin-right: 10px;
+        @include transition();
+        &.active {
+          height: 12px;
+          width: 12px;
+          background: $link-color;
+        }
+      }
+      @media (max-width: 991px) {
+        display: none !important;
+      }
+    }
+    // .owl-item {
+    //   img {
+    //     width: auto !important;
+    //   }
+    // }
+  }
+  .main_title {
+    h2 {
+      color: $white;
+    }
+  }
+}
+.newscard_item {
+  padding: 10px 15px;
+  margin-bottom: 200px;
+  margin-left: 10px;
+  margin: 0px 10px 10px;
+  box-shadow: 0px 15px 30px 0px rgba(221, 221, 221, 0.3);
+  background-color: $white;
+  @include transition();
+  @media (max-width: 991px) {
+    margin-bottom: 0px;
+  }
+  @media (max-width: 575px) {
+    padding: 30px 20px;
+  }
+  img {
+    border-radius: 5px;
+  }
+  &__icon{
+    i,span{
+      font-size: 30px;
+      color: $primary-color;
+    }
+  }
+  .col-lg-2 {
+    padding-right: 0;
+  }
+  .col-lg-8 {
+    vertical-align: middle;
+    align-self: center;
+  }
+  .testi_text {
+    @media (max-width: 991px) {
+      margin-top: 50px;
+    }
+    h4 {
+      font-size: 20px;
+      margin-top: 5px;
+      text-transform: capitalize;
+    }
+    p {
+      margin-bottom: 0px;
+    }
+  }
+  &:hover {
+    box-shadow: 0px 10px 30px 0px rgba($title-color, 0.1);
+  }
+}
+/* End news card area css
+============================================================================================ */
+
+/* Start recent projects css
+============================================================================================ */
+
+.recent_projects {
+  padding-bottom: 10px;
+  @media (max-width: 991px) {
+    padding-bottom: 40px;
+  }
+  .owl-item {
+    opacity: 0;
+    @include transition();
+    padding: 0px 10px;
+    padding-bottom: 30px;
+  }
+  .owl-item.active {
+    opacity: 1;
+  }
+  .owl-nav {
+    display: flex !important;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    width: 120%;
+    transform: translateY(-50%);
+    left: -11%;
+    @media (max-width: 991px) {
+      display: none!important;
+    }
+    .owl-prev,
+    .owl-next {
+      img {
+        @include filter(grayscale(100%));
+        @include transition();
+        &:hover {
+          @include filter(grayscale(0%));
+        }
+      }
+    }
+  }
+}
+
+.single_recent_project {
+  @include transition();
+  .recent_project_head {
+    position: relative;
+    overflow: hidden;
+    img {
+      @include transition();
+    }
+  }
+  .recent_project_content {
+    padding: 30px 26px;
+    background: $offwhite;
+    position: relative;
+    @include transition();
+    .tag {
+      padding: 2px 21px;
+      font-size: 13px;
+      color: #fff;
+      background: $title-color;
+      text-transform: uppercase;
+    }
+    h4 {
+      font-size: 20px;
+      font-weight: 500;
+      a {
+        color: $title-color;
+      }
+    }
+    p {
+      margin: 0;
+    }
+    .recent_project_meta {
+      margin-top: 25px;
+      .meta_info {
+        a {
+          color: $title-color;
+        }
+      }
+    }
+  }
+  .authr_meta {
+    img {
+      width: auto !important;
+      display: inline-block !important;
+    }
+    span {
+      color: $title-color;
+      font-weight: 500;
+    }
+  }
+  &:hover {
+    box-shadow: 0px 10px 30px rgba($title-color, 0.1);
+    .recent_project_head {
+      img {
+        @include transform(scale(1.2));
+      }
+    }
+    .recent_project_content {
+      background: #fff;
+    }
+    h4 {
+      a {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+/* End recent projects css
+============================================================================================ */
+
+/* Start Courses Details Area css
+============================================================================================ */
+
+.course_details_area {
+  .title {
+    font-size: 21px;
+    border: none;
+    cursor: pointer;
+    margin-top: 40px;
+    border-bottom: 1px solid #eeeeee;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 22px;
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      height: 1px;
+      width: 74px;
+      background: $primary-color;
+    }
+  }
+}
+
+.course_details_left {
+  .content_wrapper {
+  }
+  .content {
+  }
+  .course_list {
+    margin-bottom: 0;
+    @media (max-width: 575px) {
+      padding-left: 0;
+    }
+    li {
+      list-style: none;
+      margin-bottom: 20px;
+      .primary-btn {
+        background: #f9f9f9;
+        color: $text-color;
+        box-shadow: none;
+        font-size: 12px;
+        border-radius: 0px;
+        &:hover {
+          background: $primary-color;
+          color: #ffffff;
+        }
+        @media (max-width: 575px) {
+          min-width: 100px;
+          font-size: 10px;
+          padding: 0 10px;
+        }
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.right-contents {
+  @media (max-width: 991px) {
+    margin-top: 50px;
+  }
+  ul {
+    padding-left: 0;
+    li {
+      list-style: none;
+      background: #f9f9f9;
+      padding: 10px 22px;
+      margin-bottom: 10px;
+      a {
+        color: $text-color;
+        text-align: left;
+        p {
+          margin-bottom: 0px;
+        }
+      }
+      .or {
+        color: $title-color;
+        font-weight: 500;
+      }
+    }
+  }
+  .enroll {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .reviews {
+    span,
+    .star {
+      width: 31%;
+      margin-bottom: 10px;
+    }
+  }
+  .avg-review {
+    background: #04091e;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 20px 0px;
+    span {
+      font-size: 18px;
+      color: $primary-color;
+    }
+    @media (max-width: 991px) {
+      margin-bottom: 20px;
+    }
+  }
+  .single-reviews {
+    .thumb {
+      @media (max-width: 1024px) {
+        margin-right: 10px;
+      }
+    }
+    h5 {
+      display: inline-flex;
+      @media (max-width: 1024px) {
+        display: block;
+      }
+      .star {
+        margin-left: 10px;
+        @media (max-width: 1024px) {
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+  .feedeback {
+    margin-top: 30px;
+    textarea {
+      resize: none;
+      height: 130px;
+      background: $offwhite;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+  .star {
+    .checked {
+      color: $primary-color;
+    }
+  }
+  .comments-area {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    .star {
+      margin-left: 20px;
+    }
+  }
+}
+
+/* End  Courses Details Area css
+============================================================================================ */

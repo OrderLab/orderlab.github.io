@@ -1,0 +1,27 @@
+<header class="header_area">
+  <div class="main_menu">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container box_1620">
+        <a class="navbar-brand logo_h" href="{{ '/index.html' | relative_url }}"><img src="{{ '/assets/img/logo.png' | relative_url }}" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+          {% assign current = page.url | downcase | split: '/' %}
+          <ul class="nav navbar-nav menu_nav justify-content-end">
+            <li class="nav-item {% if current[1] == 'index' %}'active'{% endif %}"><a class="nav-link" href="{{ '/index.html' | relative_url }}">Home</a></li>
+            <li class="nav-item {% if current[1] == 'team' %}'active'{% endif %}"><a class="nav-link" href="{{ '/team.html' | relative_url }}">People</a></li>
+            <li class="nav-item {% if current[1] == 'news' %}'active'{% endif %}"><a class="nav-link" href="{{ '/news.html' | relative_url }}">News</a></li>
+            <li class="nav-item {% if current[1] == 'pubs' %}'active'{% endif %}"><a class="nav-link" href="{{ '/pubs.html' | relative_url }}">Publications</a>
+            <li class="nav-item {% if current[1] == 'projects' %}'active'{% endif %}"><a class="nav-link" href="{{ '/projects.html' | relative_url }}">Projects</a></li>
+            <li class="nav-item {% if current[1] == 'software' %}'active'{% endif %}"><a class="nav-link" href="{{ '/software.html' | relative_url }}">Software</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://orderlab.io/reading-group/current" target="_blank">Reading</a></li>
+            <li class="nav-item {% if current[1] == 'join' %}'active'{% endif %}"><a class="nav-link" href="{{ '/join.html' | relative_url }}">Join</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,22 @@
+title: Ordered Systems Lab at U-M
+email: ryanph@umich.edu
+description: >- # this means to ignore newlines until "baseurl:"
+  This is the website for the Ordered Systems Lab (a.k.a Order Lab) at
+  University of Michigan, led by Prof. Ryan Huang.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: OrderLab
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-last-modified-at
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+keep_files: [LeaseOS]
+timezone: America/New_York

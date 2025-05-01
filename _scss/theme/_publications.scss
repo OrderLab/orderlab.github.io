@@ -1,0 +1,38 @@
+a.nodec {
+  color: #333333;
+  text-decoration:none
+}
+a.nodec:hover {
+  color:#4582ec;
+}
+.publications {
+  /* list-style: none;
+  margin: 0;
+  font-size: 18px;
+  */
+  padding-left: 1em;
+}
+.publications li {
+  padding-left: 2px;
+  padding-bottom: 10px;
+  position: relative;
+}
+.authorlist {
+}
+.papertitle {
+}
+.conf {
+  padding-right: 0.5rem;
+  border: none;
+  border-radius: 2px;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  vertical-align: middle;
+}
+a.conf {
+  color: #515151;
+}
+.publinkitem {
+  padding: 0 0.5rem;
+}
