@@ -11,7 +11,6 @@ github_username: OrderLab
 markdown: kramdown
 theme: minima
 plugins:
-  - jekyll-feed
   - jekyll-last-modified-at
 
 exclude:
