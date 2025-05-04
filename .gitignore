@@ -1,4 +1,7 @@
 _site
+_data
+_includes/publist.html
+publist.html
 .sass-cache
 .jekyll-metadata
 *.swp
