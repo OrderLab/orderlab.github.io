@@ -1,0 +1,14 @@
+{%- assign allpubs = site.data.allpubs -%}
+{%- assign prevyear = null -%}
+{%- for pub in allpubs -%}
+{%- if pub.year != prevyear -%}
+{%- if prevyear  != null %}
+      </ul>
+{%- endif %}
+      <h2 id="publications">{{ pub.year }}</h2>
+      <ul class="publications">
+{% assign prevyear = pub.year -%}
+{%- endif -%}
+  {%- include pubitem.html pub=pub -%}
+{%- endfor %}
+      </ul>
