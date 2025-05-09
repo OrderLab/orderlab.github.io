@@ -1,6 +1,6 @@
 _site
 _includes/pubitem.html
-publist.html
+buildpubs.md
 .sass-cache
 .jekyll-metadata
 *.swp
