@@ -1,6 +1,5 @@
 _site
-_data
-_includes/publist.html
+_includes/pubitem.html
 publist.html
 .sass-cache
 .jekyll-metadata

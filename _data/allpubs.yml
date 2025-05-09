@@ -1,0 +1,766 @@
+- title: 'Training with Confidence: Catching Silent DL Training Bugs with Automated Proactive Checks'
+  conference: OSDI 2025
+  year: 2025
+  authors:
+    - yuxuan
+    - ziming
+    - boyu
+    - beijie
+    - runhui
+    - ryan
+  links:
+    conference:
+      url: https://www.usenix.org/conference/osdi25
+    paper:
+      url: '#'
+    software:
+      url: https://github.com/OrderLab/TrainCheck
+- title: 'Deriving Semantic Checkers from Tests to Detect Silent Failures in Production Distributed Systems'
+  conference: OSDI 2025
+  year: 2025
+  authors:
+    - chang
+    - dimas
+    - yujin
+    - zhewen
+    - diwang
+    - yuzhuo
+    - achmad
+    - ding
+    - suman
+    - ryan
+  links:
+    conference:
+      url: https://www.usenix.org/conference/osdi25
+    paper:
+      url: '#'
+    software:
+      url: https://github.com/OrderLab/T2C
+- title: 'One-Size-Fits-None: Understanding and Enhancing Slow-Fault Tolerance in Modern Distributed Systems'
+  conference: NSDI 2025
+  year: 2025
+  authors:
+    - ruiming
+    - yunchi
+    - yuxuan
+    - guangtao
+    - ryan
+  links:
+    conference:
+      url: https://www.usenix.org/conference/nsdi25
+    paper:
+      url: paper/xinda-nsdi25-preprint.pdf
+    bib:
+      url: paper/xinda-nsdi25.bib
+    talk:
+      url: slides/xinda_nsdi25_slides.pdf
+    software:
+      url: https://github.com/OrderLab/xinda
+  coverages:
+    - url: https://cse.engin.umich.edu/stories/a-new-tool-to-manage-slow-faults
+      site: CSE News
+    - url: https://techxplore.com/news/2025-05-tool-faults-real-adjustment.html
+      site: Tech Xplore
+- title: 'Efficient Reproduction of Fault-Induced Failures in Distributed Systems with Feedback-Driven Fault Injection'
+  conference: SOSP 2024
+  year: 2024
+  authors:
+    - tony
+    - haoze
+    - tanakorn
+    - suman
+    - ryan
+  author_note:
+    tony: '*'
+    haoze: '*'
+    note: '*: equal contribution'
+  links:
+    conference:
+      url: https://sigops.org/s/conferences/sosp/2024
+    paper:
+      url: paper/anduril-sosp24.pdf
+    bib:
+      url: paper/anduril-sosp24.bib
+    talk:
+      url: slides/anduril_sosp24_slides.pdf
+    software:
+      url: https://github.com/OrderLab/Anduril
+- title: 'Efficient Exposure of Partial Failure Bugs in Distributed Systems with Inferred Abstract States'
+  conference: NSDI 2024
+  year: 2024
+  authors:
+    - haoze
+    - tony
+    - ryan
+  links:
+    conference:
+      url: https://www.usenix.org/conference/nsdi24
+    paper:
+      url: paper/legolas-nsdi24-preprint.pdf
+    bib:
+      url: paper/legolas-nsdi24.bib
+    talk:
+      url: slides/legolas_nsdi24_slides.pdf
+    software:
+      url: https://github.com/OrderLab/Legolas
+- title: 'Simplifying Cloud Management with Cloudless Computing'
+  conference: HotNets 2023
+  year: 2023
+  authors:
+    - yimingqiu
+    - patrickkon
+    - jiarong
+    - yibo
+    - hongyi
+    - xinyu
+    - ryan
+    - mosharaf
+    - ang
+  links:
+    conference:
+      url: https://conferences.sigcomm.org/hotnets/2023
+    paper:
+      url: paper/cloudless-hotnets23.pdf
+    bib:
+      url: paper/cloudless-hotnets23.bib
+- title: 'Pushing Performance Isolation Boundaries into Application with pBox'
+  conference: SOSP 2023
+  year: 2023
+  authors:
+    - yigong
+    - gongqi
+    - ryan
+  links:
+    conference:
+      url: https://sosp2023.mpi-sws.org
+    paper:
+      url: paper/pbox-sosp23.pdf
+    bib:
+      url: paper/pbox-sosp23.bib
+    talk:
+      url: slides/pbox_sosp23_slides.pdf
+    software:
+      url: https://github.com/OrderLab/pBox
+- title: 'Effective Performance Issue Diagnosis with Value-Assisted Cost Profiling'
+  conference: EuroSys 2023
+  year: 2023
+  authors:
+    - lingmei
+    - yigong
+    - ryan
+    - jasonnieh
+    - junfeng
+  links:
+    conference:
+      url: https://2023.eurosys.org
+    paper:
+      url: paper/vprof-eurosys23.pdf
+    bib:
+      url: paper/vprof-eurosys23.bib
+    talk:
+      url: slides/vprof_eurosys23_slides.pdf
+    software:
+      url: https://github.com/wenglingmei/vprofAE
+- title: 'Operating System Support for Safe and Efficient Auxiliary Execution'
+  conference: OSDI 2022
+  year: 2022
+  authors:
+    - yuzhuo
+    - ryan
+  links:
+    conference:
+      url: https://www.usenix.org/conference/osdi22
+    paper:
+      url: paper/orbit-osdi22.pdf
+    bib:
+      url: paper/orbit-osdi22.bib
+    talk:
+      url: slides/orbit_osdi22_slides.pdf
+    software:
+      url: https://github.com/OrderLab/orbit
+- title: 'Demystifying and Checking Silent Semantic Violations in Large Distributed Systems'
+  conference: OSDI 2022
+  year: 2022
+  authors:
+    - chang
+    - yuzhuo
+    - ryan
+  links:
+    conference:
+      url: https://www.usenix.org/conference/osdi22
+    paper:
+      url: paper/oathkeeper-osdi22.pdf
+    bib:
+      url: paper/oathkeeper-osdi22.bib
+    talk:
+      url: slides/oathkeeper_osdi22_slides.pdf
+    software:
+      url: https://github.com/OrderLab/OathKeeper
+- title: 'RESIN: A Holistic Service for Dealing with Memory Leaks in Production Cloud Infrastructure'
+  conference: OSDI 2022
+  year: 2022
+  authors:
+    - chang
+    - cong
+    - ryan
+    - yingnong
+    - siqin
+    - xinsheng
+    - xukunli
+    - qingwei
+    - murali
+  links:
+    conference:
+      url: https://www.usenix.org/conference/osdi22
+    paper:
+      url: paper/resin-osdi22.pdf
+    bib:
+      url: paper/resin-osdi22.bib
+    talk:
+      url: slides/resin_osdi22_slides.pdf
+- title: 'Argus: Debugging Performance Issues in Modern Desktop Applications with Annotated Causal Tracing'
+  conference: ATC 2021
+  year: 2021
+  authors:
+    - lingmei
+    - ryan
+    - jasonnieh
+    - junfeng
+  links:
+    conference:
+      url: https://www.usenix.org/conference/atc21
+    paper:
+      url: paper/argus-atc21.pdf
+    bib:
+      url: paper/argus.bib
+    talk:
+      url: slides/argus_atc21_slides.pdf
+    software:
+      url: https://github.com/columbia/ArgusDebugger
+  highlight: Best Paper Award
+
+- title: 'Understanding and Dealing with Hard Faults in Persistent Memory Systems'
+  conference: EuroSys 2021
+  year: 2021
+  authors:
+    - brianchoi
+    - randalburns
+    - ryan
+  links:
+    conference:
+      url: https://2021.eurosys.org
+    paper:
+      url: paper/arthas-eurosys21.pdf
+    techreport:
+      url: paper/arthas-tech-report.pdf
+    bib:
+      url: paper/arthas-eurosys21.bib
+    talk:
+      url: slides/arthas_eurosys_slides.pdf
+    software:
+      url: https://github.com/OrderLab/Arthas
+- title: 'Automated Reasoning and Detection of Specious Configuration in Large Systems with Symbolic Execution'
+  conference: OSDI 2020
+  year: 2020
+  authors:
+    - yigong
+    - gongqi
+    - ryan
+  links:
+    conference:
+      url: https://www.usenix.org/conference/osdi20
+    paper:
+      url: paper/violet-osdi20.pdf
+    techreport:
+      url: paper/violet-tech-report.pdf
+    bib:
+      url: paper/violet-osdi20.bib
+    talk:
+      url: slides/violet_osdi20_slides.pdf
+    software:
+      url: https://github.com/OrderLab/violet
+- title: 'Predictive and Adaptive Failure Mitigation to Avert Production Cloud VM Interruptions'
+  conference: OSDI 2020
+  year: 2020
+  authors:
+    - sebastien
+    - randolph
+    - youjiang
+    - yingnong
+    - ryan
+    - zhengmu
+    - puzhao
+    - tarunramani
+    - nagagovindraju
+    - xukunli
+    - qingwei
+    - gillapid
+    - murali
+  links:
+    conference:
+      url: https://www.usenix.org/conference/osdi20
+    paper:
+      url: paper/narya-osdi20.pdf
+    bib:
+      url: paper/narya-osdi20.bib
+    techreport:
+      url: paper/narya-tech-report.pdf
+- title: 'Understanding, Detecting and Localizing Partial Failures in Large System Software'
+  conference: NSDI 2020
+  year: 2020
+  authors:
+    - chang 
+    - ryan
+    - scott
+  links:
+    conference:
+      url: https://www.usenix.org/conference/nsdi20
+    paper:
+      url: paper/omegagen-nsdi20.pdf
+    bib:
+      url: paper/omegagen.bib
+    talk:
+      url: slides/omegagen_nsdi20_slides.pdf
+  coverages:
+    - url: https://blog.acolyer.org/2020/03/16/omega-gen
+      site: The Morning Paper
+  highlight: Best Paper Award
+- title: 'Gandalf: An Intelligent, End-To-End Analytics Service for Safe Deployment in Large-Scale Cloud Infrastructure'
+  conference: NSDI 2020
+  year: 2020
+  authors:
+    - ze
+    - qian
+    - ken
+    - yingnong
+    - ryan
+    - pankaj
+    - xinsheng
+    - qingwei
+    - youjiang
+    - sebastien
+    - murali
+  links:
+    conference:
+      url: https://www.usenix.org/conference/nsdi20
+    paper:
+      url: paper/gandalf-nsdi20.pdf
+    bib:
+      url: paper/gandalf.bib
+  coverages:
+    - url: https://blog.acolyer.org/2020/02/28/microsoft-gandalf
+      site: The Morning Paper
+- title: 'Scaling Performance Issue Detection and Diagnosis in Cloud Infrastructures'
+  conference: AAAI-20 Workshop on Cloud Intelligence
+  year: 2020
+  authors:
+    - yigong
+    - ze
+    - ryan
+    - suhas
+    - francis
+    - yingnong
+    - murali
+  links:
+    conference:
+      url: https://cloudintelligenceworkshop.org
+    paper:
+      url: paper/sdig-aaai20-workshop.pdf
+    bib:
+      url: paper/sdig-aaai20.bib
+- title: 'Comprehensive and Efficient Runtime Checking in System Software through Watchdogs'
+  conference: HotOS 2019
+  year: 2019
+  authors:
+    - chang
+    - ryan
+    - scott
+  links:
+    conference:
+      url: http://hotos19.sigops.org
+    paper:
+      url: paper/watchdog-hotos19.pdf
+    bib:
+      url: paper/watchdog.bib
+    talk:
+      url: slides/watchdog_hotos19_slides.pdf
+- title: 'URSA: Hybrid Block Storage for Cloud-Scale Virtual Disks'
+  conference: EuroSys 2019
+  year: 2019
+  authors:
+    - huiba
+    - yimingz
+    - dongsheng
+    - zhimingz
+    - shengyun
+    - ryan
+    - zhengqin
+    - kaichen
+    - yongqiang
+  links:
+    conference:
+      url: https://www.eurosys2019.org
+    paper:
+      url: 'paper/ursa-eurosys19.pdf'
+    bib:
+      url: paper/ursa.bib
+- title: 'A Case for Lease-Based, Utilitarian Resource Management on Mobile Devices'
+  conference: ASPLOS 2019
+  year: 2019
+  authors:
+    - yigong
+    - suyi
+    - ryan
+  links:
+    conference:
+      url: https://asplos-conference.org
+    paper:
+      url: paper/leaseos-asplos19.pdf
+    bib:
+      url: paper/leaseos.bib
+    software:
+      url: https://orderlab.io/LeaseOS
+    talk:
+      url: slides/leaseos_asplos19_slides.pptx
+  highlight: Best Paper Award
+  coverages:
+    - url: https://blog.acolyer.org/2019/05/31/lease-os
+      site: The Morning Paper
+- title: 'AIOps: Real-World Challenges and Research Innovations'
+  tb: ICSE 2019 Technical Briefings
+  year: 2019
+  authors:
+    - yingnong
+    - qingwei
+    - ryan
+  links:
+    conference:
+      url: https://2019.icse-conferences.org/info/technical-briefings
+    paper:
+      url: paper/aiops-icse19-briefing.pdf
+      analytic: aiops_briefing.pdf
+    bib:
+      url: paper/aiops.bib
+      analytic: aiops.bib
+- title: 'Capturing and Enhancing In Situ System Observability for Failure Detection'
+  conference: OSDI 2018
+  year: 2018
+  authors:
+    - ryan
+    - chuanxiong
+    - jay
+    - lidong
+    - yingnong
+  links:
+    conference:
+      url: https://www.usenix.org/conference/osdi18
+    paper:
+      url: paper/panorama-osdi18.pdf
+    bib:
+      url: paper/panorama.bib
+    software:
+      url: https://github.com/ryanphuang/panorama
+    talk:
+      url: slides/panorama_osdi18_slides.pdf
+  coverages:
+    - url: https://blog.acolyer.org/2018/10/15/capturing-and-enhancing-in-situ-system-observability-for-failure-detection
+      site: The Morning Paper
+    - url: https://blog.csdn.net/TiDB_PingCAP/article/details/84388408
+      site: CSDN
+- title: 'End-to-End Automated Exploit Generation for Validating the Security of Processor Designs'
+  conference: MICRO 2018
+  year: 2018
+  authors:
+    - rui
+    - calvin
+    - ryan
+    - cynthia
+  highlight: Best Paper Candidate
+  links:
+    conference:
+      url: https://www.microarch.org/micro51
+    paper:
+      url: https://cs.unc.edu/~csturton/papers/zhang2018MICRO.pdf
+    bib:
+      url: paper/coppelia.bib
+- title: 'TerseCades: Efficient Data Compression in Stream Processing' 
+  conference: USENIX ATC 2018
+  year: 2018
+  authors:
+    - gennady
+    - chuanxiong
+    - mj
+    - ryan
+    - lidong
+  links:
+    conference:
+      url: 
+    paper:
+      url: paper/tersecades-atc18.pdf
+    bib:
+      url: paper/tersecades.bib
+- title: 'Gray Failure: The Achilles’ Heel of Cloud-Scale Systems'
+  conference: HotOS 2017
+  year: 2017
+  authors:
+    - ryan
+    - chuanxiong
+    - lidong
+    - jay
+    - yingnong
+    - murali
+    - randolph
+  links:
+    conference:
+      url: https://www.sigops.org/hotos/hotos17
+    paper:
+      url: paper/grayfailure-hotos17.pdf
+    bib:
+      url: paper/grayfailure.bib
+    talk:
+      url: slides/grayfailure_hotos17_slides.pdf
+  coverages:
+    - url: https://blog.acolyer.org/2017/06/15/gray-failure-the-achilles-heel-of-cloud-scale-systems
+      site: The morning paper
+    - url: http://www.zdnet.com/article/how-clouds-fail
+      site: ZDNet
+    - url: http://storagemojo.com/2017/07/24/how-high-redundancy-can-hurt-availability
+      site: StorageMojo
+    - url: https://news.ycombinator.com/item?id=16253405
+      site: Hacker News
+- title: Early Detection of Configuration Errors to Reduce Failure Damage
+  conference: OSDI 2016
+  year: 2016
+  authors:
+    - tianyin
+    - xinxin
+    - ryan
+    - yy
+    - shan
+    - long
+    - shankar
+  highlight: Best Paper Award
+  links:
+    conference:
+      url: https://www.usenix.org/conference/osdi16
+    paper:
+      url: http://opera.ucsd.edu/paper/osdi16-pcheck.pdf
+    bib:
+      url: paper/pcheck.bib
+- title: 'DefDroid: Towards a More Defensive Mobile OS Against Disruptive App Behavior'
+  conference: MobiSys 2016
+  year: 2016
+  authors:
+    - ryan
+    - tianyin
+    - xinxin
+    - yy
+  links:
+    conference:
+      url: http://www.sigmobile.org/mobisys/2016
+    paper:
+      url: paper/defdroid-mobisys16.pdf
+    bib:
+      url: paper/defdroid.bib
+    talk:
+      url: slides/defdroid_mobisys16_slides.pdf
+    video:
+      url: https://youtu.be/lguUoitv80U
+    web:
+      url: https://defdroid.github.io
+- title: Saving Mobile App Developers from Network Disruptions
+  conference: EuroSys 2016
+  year: 2016
+  authors:
+    - xinxin
+    - ryan
+    - tianyin
+    - yy
+  links:
+    conference:
+      url: http://eurosys16.doc.ic.ac.uk
+    paper:
+      url: paper/nchecker-eurosys16.pdf
+    bib:
+      url: paper/nchecker.bib
+- title: 'ConfValley: A Systematic Configuration Validation Framework for Cloud Services'
+  conference: EuroSys 2015
+  year: 2015
+  authors:
+    - ryan
+    - bill
+    - abhishek
+    - yy
+  links:
+    conference:
+      url: http://eurosys2015.labri.fr
+    paper:
+      url: paper/confvalley-eurosys15.pdf
+      analytic: confvalley-eurosys15.pdf
+    bib:
+      url: paper/confvalley.bib
+      analytic: confvalley.bib
+    talk:
+      url: slides/confvalley_eurosys15_slides.pdf
+- title: Experience in Building a Comparative Performance Analysis Engine for a Commercial System
+  tr:
+    UC San Diego Technical Report CS2015-1014
+  year: 2015
+  authors:
+    - ryan
+    - craig
+    - vincent
+    - steven
+    - dongcai
+    - yy
+    - lawrence
+  links:
+    paper:
+      url: paper/perfanalysis_techreport.pdf
+      analytic: perfanalysis_techreport.pdf
+    bib:
+      url: paper/perfanalysis.bib
+      analytic: perfanalysis.bib
+- title: 'Why Does a Cloud-Scale Service Fail Despite Fault-Tolerance?'
+  conference: OSDI 2014
+  year: 2014
+  authors:
+    - ryan
+    - xinxin
+    - bill
+    - yy
+  links:
+    conference:
+      url: https://www.usenix.org/conference/osdi14
+    paper:
+  note: Retracted for confidentiality reasons
+- title: Performance Regression Testing Target Prioritization via Performance Risk Analysis
+  conference: ICSE 2014
+  year: 2014
+  authors:
+    - ryan
+    - xiao
+    - dongcai
+    - yy
+  links:
+    conference:
+      url: http://2014.icse-conferences.org
+    paper:
+      url: paper/perfscope-icse14.pdf
+    bib:
+      url: paper/perfscope.bib
+    talk:
+      url: slides/perfscope_icse14_slides.pdf
+    software:
+      url: http://ryanphuang.github.io/perfscope
+- title: Do Not Blame Users for Misconfigurations
+  conference: SOSP 2013
+  year: 2013
+  authors:
+    - tianyin
+    - jiaqi
+    - ryan
+    - jing
+    - tianwei
+    - ding
+    - yy
+    - shankar
+  links:
+    conference: 
+      url: http://sigops.org/sosp/sosp13
+    paper:
+      url: http://cseweb.ucsd.edu/~tixu/papers/sosp13.pdf
+    bib:
+      url: paper/spex.bib
+- title: 'eDoctor: Automatically Diagnosing Abnormal Battery Drain Issues on Smartphones'
+  conference: NSDI 2013
+  year: 2013
+  authors:
+    - xiao
+    - ryan
+    - xinxin
+    - pei
+    - soyeon
+    - yy
+    - lawrence
+    - geoff
+  links:
+    conference: 
+      url: https://www.usenix.org/conference/nsdi13
+    paper:
+      url: paper/edoctor-nsdi13.pdf
+    bib:
+      url: paper/edoctor.bib
+- title: Understanding Latent Interactions in Online Social Networks
+  journal: TWEB 7(4), Oct. 2013
+  year: 2013
+  authors:
+    - jingjiang
+    - christo
+    - xiaowang
+    - wenpeng
+    - ryan
+    - yafei
+    - ben
+  links:
+    conference:
+      url: http://tweb.acm.org
+    paper:
+      url: http://people.cs.uchicago.edu/~ravenben/publications/pdf/latent-tweb13.pdf
+    bib:
+      url: paper/latent-tweb13.bib
+- title: 'Be Conservative: Enhancing Failure Diagnosis with Proactive Logging'
+  conference: OSDI 2012
+  year: 2012
+  authors:
+    - ding
+    - soyeon
+    - ryan
+    - yang
+    - michael
+    - xiaoming
+    - yy
+    - stefan
+  links:
+    conference: 
+      url: http://www.usenix.org/events/osdi12
+    paper:
+      url: http://opera.ucsd.edu/paper/osdi12-errlog.pdf
+    bib:
+      url: paper/errlog.bib
+    data:
+      url: http://opera.ucsd.edu/errlog.htm
+- title: 'Understanding Latent Interactions in Online Social Networks'
+  conference: IMC 2010
+  year: 2010
+  authors:
+    - jingjiang
+    - christo
+    - xiaowang
+    - ryan
+    - wenpeng
+    - yafei
+    - ben
+  links:
+    conference: 
+      url: http://conferences.sigcomm.org/imc/2010
+    paper:
+      url: http://conferences.sigcomm.org/imc/2010/papers/p369.pdf
+    bib:
+      url: paper/osn.bib
+- title: A Multiple User Sharing Behaviors Based Approach for Fake File Detection in P2P Environments
+  journal: SCIS 53(11), Nov. 2010
+  year: 2010
+  authors:
+    - jingjiang
+    - yongjun
+    - qinyuan
+    - ryan
+    - yafei
+  links:
+    conference:
+      url: http://link.springer.com/journal/11432/53/11
+    paper:
+      url: http://link.springer.com/content/pdf/10.1007%2Fs11432-010-4087-5.pdf
+    bib:
+      url: paper/p2pfakefile.bib
