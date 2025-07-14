@@ -109,7 +109,7 @@ calvin:
     url: http://cs.unc.edu/~cd
 yigong:
     name: Yigong Hu
-    url: https://www.cs.jhu.edu/~yigonghu
+    url: https://yigonghu.github.io
 suyi:
     name: Suyi Liu
     url: https://sylll.github.io
@@ -251,3 +251,44 @@ beijie:
     name: Beijie Liu
 runhui:
     name: Runhui Xu
+chengtan:
+    name: Cheng Tan
+    url: https://naizhengtan.github.io
+youshan:
+    name: Youshan Miao
+    url: https://www.microsoft.com/en-us/research/people/yomia
+yizhu:
+    name: Yi Zhu
+    url: https://www.microsoft.com/en-us/research/people/yizhu1
+xianzhang:
+    name: Xian Zhang
+    url: https://www.microsoft.com/en-us/research/people/zhxian
+fanyang:
+    name: Fan Yang
+    url: https://www.microsoft.com/en-us/research/people/fanyang
+yuqimai:
+    name: Yuqi Mai
+angting:
+    name: Angting Cai
+yichen:
+    name: Yi Chen
+    url: https://chenyi.world
+wanning:
+    name: Wanning He
+    url: https://hwanning.netlify.app
+xiaoyang:
+    name: Xiaoyang Qian
+peter:
+    name: Peter M. Chen
+    url: https://web.eecs.umich.edu/~pmchen
+zeyin:
+    name: Zeyin Zhang
+yicheng:
+    name: Yicheng Liu
+yile:
+    name: Yile Gu
+shuangyu:
+    name: Shuangyu Lei
+baris:
+    name: Baris Kasikci
+    url: https://homes.cs.washington.edu/~baris

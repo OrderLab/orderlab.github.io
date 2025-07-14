@@ -1,3 +1,52 @@
+- title: 'Verifying Distributed Deep Learning Training via Parallelization Equivalence'
+  conference: SOSP 2025
+  year: 2025
+  authors:
+    - yunchi
+    - chengtan
+    - youshan
+    - ryan
+    - yizhu
+    - xianzhang
+    - fanyang
+  links:
+    conference:
+      url: https://sigops.org/s/conferences/sosp/2025/
+    paper:
+      url: '#'
+- title: 'Optimistic Recovery for High-Availability Software via Partial Process State Preservation'
+  conference: SOSP 2025
+  year: 2025
+  authors:
+    - yuzhuo
+    - yuqimai
+    - angting
+    - yichen
+    - wanning
+    - xiaoyang
+    - peter
+    - ryan
+  links:
+    conference:
+      url: https://sigops.org/s/conferences/sosp/2025/
+    paper:
+      url: '#'
+- title: 'Mitigating Application Resource Overload with Targeted Task Cancellation'
+  conference: SOSP 2025
+  year: 2025
+  authors:
+    - yigong
+    - zeyin
+    - yicheng
+    - yile
+    - shuangyu
+    - baris
+    - ryan
+  links:
+    conference:
+      url: https://sigops.org/s/conferences/sosp/2025/
+    paper:
+      url: '#'
 - title: 'Training with Confidence: Catching Silent Errors in Deep Learning Training with Automated Proactive Checks'
   conference: OSDI 2025
   year: 2025
@@ -12,7 +61,11 @@
     conference:
       url: https://www.usenix.org/conference/osdi25
     paper:
-      url: '#'
+      url: paper/traincheck-osdi25-preprint.pdf
+    bib:
+      url: paper/traincheck-osdi25.bib
+    arxiv:
+      url: https://www.arxiv.org/abs/2506.14813
     software:
       url: https://github.com/OrderLab/TrainCheck
 - title: 'Deriving Semantic Checkers from Tests to Detect Silent Failures in Production Distributed Systems'
@@ -33,7 +86,9 @@
     conference:
       url: https://www.usenix.org/conference/osdi25
     paper:
-      url: '#'
+      url: paper/t2c-osdi25-preprint.pdf
+    bib:
+      url: paper/t2c-osdi25.bib
     software:
       url: https://github.com/OrderLab/T2C
 - title: 'One-Size-Fits-None: Understanding and Enhancing Slow-Fault Tolerance in Modern Distributed Systems'

@@ -1,3 +1,5 @@
+<section class="section-margin">
+    <div class="container">
 {%- assign allpubs = site.data.allpubs -%}
 {%- assign prevyear = null -%}
 {%- for pub in allpubs -%}
@@ -12,3 +14,5 @@
   {%- include pubitem.html pub=pub -%}
 {%- endfor %}
       </ul>
+    </div>
+</section>
