@@ -66,8 +66,17 @@
       url: paper/traincheck-osdi25.bib
     arxiv:
       url: https://www.arxiv.org/abs/2506.14813
+    talk:
+      url: slides/traincheck_osdi25_slides.pdf
     software:
       url: https://github.com/OrderLab/TrainCheck
+    coverages:
+      - url: https://cse.engin.umich.edu/stories/improving-ai-models-automated-tool-detects-silent-errors-in-deep-learning-training
+        site: CSE News
+      - url: https://news.engin.umich.edu/2025/07/improving-ai-models-automated-tool-detects-silent-errors-in-deep-learning-training
+        site: Michigan Engineering News
+      - url: https://techxplore.com/news/2025-07-ai-automated-tool-silent-errors.html
+        site: Tech Xplore
 - title: 'Deriving Semantic Checkers from Tests to Detect Silent Failures in Production Distributed Systems'
   conference: OSDI 2025
   year: 2025
