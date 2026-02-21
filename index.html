@@ -111,91 +111,66 @@ layout: home
 <!--================ End scope section =================-->
 
 <!--================ Start recent projects section =================-->
-<div class="recent_projects section-margin">
+<section class="section-margin project-showcase">
   <div class="container">
     <div class="section-intro text-center">
       <h2 class="section-intro__title">Recent Projects</h2>
       <p class="section-intro__subtitle">Representative systems and tooling from recent lab work.</p>
     </div>
-    <div class="row mt-4">
-      <div class="col-lg-12">
-        <div class="owl-theme owl-carousel active_course">
-          <div class="single_recent_project">
-            <div class="recent_project_head">
-              <img class="img-fluid" src="{{ '/assets/img/project/traincheck_logo.png' | relative_url }}" alt="TrainCheck" />
-            </div>
-            <div class="recent_project_content">
-              <h4 class="mb-3">
-                <a href="#">Catching Silent Errors in Deep Learning Training</a>
-              </h4>
-              <p>
-                Silent errors in deep learning training can waste significant GPU resources and lead to low-quality models.
-                TrainCheck learns semantic invariants from healthy runs and enforces them at runtime.
-              </p>
-              <div class="recent_project_meta mt-4">
-                <a class="button button-light" href="{{ '/paper/traincheck-osdi25-preprint.pdf' | relative_url }}" target="_blank">Read More</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="single_recent_project">
-            <div class="recent_project_head">
-              <img class="img-fluid" src="{{ '/assets/img/project/watchdog.jpg' | relative_url }}" alt="Watchdog" />
-            </div>
-            <div class="recent_project_content">
-              <h4 class="mb-3">
-                <a href="#">Generating Watchdogs to Localize Partial Failure</a>
-              </h4>
-              <p>
-                We synthesize custom watchdog monitors that mimic core program logic to detect and localize partial failures.
-                <span class="text-danger">Best Paper Award, NSDI '20</span>
-              </p>
-              <div class="recent_project_meta mt-4">
-                <a class="button button-light" href="{{ '/paper/omegagen-nsdi20-preprint.pdf' | relative_url }}" target="_blank">Read More</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="single_recent_project">
-            <div class="recent_project_head">
-              <img class="img-fluid" src="{{ '/assets/img/project/panorama.jpg' | relative_url }}" alt="Panorama" />
-            </div>
-            <div class="recent_project_content">
-              <h4 class="mb-3">
-                <a href="#">Capturing Observability to Detect Gray Failure</a>
-              </h4>
-              <p>
-                Panorama captures requester-observable symptoms to detect and report gray failures
-                that traditional telemetry often misses.
-              </p>
-              <div class="recent_project_meta mt-4">
-                <a class="button button-light" href="{{ '/paper/panorama-osdi18.pdf' | relative_url }}" target="_blank">Read More</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="single_recent_project">
-            <div class="recent_project_head">
-              <img class="img-fluid" src="{{ '/assets/img/project/leaseos.jpg' | relative_url }}" alt="LeaseOS" />
-            </div>
-            <div class="recent_project_content">
-              <h4 class="mb-3">
-                <a href="#">Lease-Based Utilitarian Mobile OS</a>
-              </h4>
-              <p>
-                LeaseOS adapts lease mechanisms to mobile resource management, mitigating energy bugs
-                while using utility signals to drive policy decisions.
-              </p>
-              <div class="recent_project_meta mt-4">
-                <a class="button button-light" href="{{ '/paper/leaseos-asplos19.pdf' | relative_url }}" target="_blank">Read More</a>
-              </div>
-            </div>
-          </div>
+    <div class="project-showcase__grid mt-4">
+      <article class="project-card project-card--feature">
+        <div class="project-card__media">
+          <img class="project-logo-fit" src="{{ '/assets/img/project/traincheck_logo.png' | relative_url }}" alt="TrainCheck" />
         </div>
-      </div>
+        <div class="project-card__content">
+          <h3>Catching Silent Errors in Deep Learning Training</h3>
+          <p>
+            TrainCheck learns semantic invariants from healthy runs and enforces checks at runtime,
+            catching silent training errors before they consume GPU time and degrade model quality.
+          </p>
+          <p class="project-badge">OSDI 2025</p>
+          <a class="button button-light" href="{{ '/paper/traincheck-osdi25-preprint.pdf' | relative_url }}" target="_blank">Read Paper</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__media">
+          <img src="{{ '/assets/img/project/trainverify.png' | relative_url }}" alt="TrainVerify figure" />
+        </div>
+        <div class="project-card__content">
+          <h3>TrainVerify: Equivalence-Based Verification for Distributed LLM Training</h3>
+          <p>TrainVerify verifies semantic equivalence across distributed LLM training executions to catch subtle correctness issues.</p>
+          <p class="project-badge">SOSP 2025</p>
+          <a class="button button-light" href="{{ '/paper/trainverify-sosp25.pdf' | relative_url }}" target="_blank">Read Paper</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__media">
+          <img src="{{ '/assets/img/project/phoenix.png' | relative_url }}" alt="Phoenix figure" />
+        </div>
+        <div class="project-card__content">
+          <h3>Phoenix: Optimistic Recovery via Partial Process State Preservation</h3>
+          <p>Phoenix improves software availability by preserving partial process state and enabling low-overhead optimistic recovery.</p>
+          <p class="project-badge">SOSP 2025</p>
+          <a class="button button-light" href="{{ '/paper/phoenix-sosp25.pdf' | relative_url }}" target="_blank">Read Paper</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__media">
+          <img class="project-xinda-fit" src="{{ '/assets/img/project/xinda.png' | relative_url }}" alt="Xinda figure" />
+        </div>
+        <div class="project-card__content">
+          <h3>Enhancing Slow-Fault Tolerance in Distributed Systems</h3>
+          <p>Xinda diagnoses and mitigates slow faults with adaptive mechanisms tailored to modern distributed system behavior.</p>
+          <p class="project-badge">NSDI 2025</p>
+          <a class="button button-light" href="{{ '/paper/xinda-nsdi25-preprint.pdf' | relative_url }}" target="_blank">Read Paper</a>
+        </div>
+      </article>
     </div>
   </div>
-</div>
+</section>
 <!--================ End recent projects section =================-->
 
 <!--================ Start blog preview section =================-->
