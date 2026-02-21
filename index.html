@@ -117,57 +117,56 @@ layout: home
       <h2 class="section-intro__title">Recent Projects</h2>
       <p class="section-intro__subtitle">Representative systems and tooling from recent lab work.</p>
     </div>
-    <div class="project-showcase__grid mt-4">
-      <article class="project-card project-card--feature">
-        <div class="project-card__media">
-          <img class="project-logo-fit" src="{{ '/assets/img/project/traincheck_logo.png' | relative_url }}" alt="TrainCheck" />
-        </div>
-        <div class="project-card__content">
-          <h3>Catching Silent Errors in Deep Learning Training</h3>
-          <p>
-            TrainCheck learns semantic invariants from healthy runs and enforces checks at runtime,
-            catching silent training errors before they consume GPU time and degrade model quality.
-          </p>
-          <p class="project-badge">OSDI 2025</p>
-          <a class="button button-light" href="{{ '/paper/traincheck-osdi25-preprint.pdf' | relative_url }}" target="_blank">Read Paper</a>
-        </div>
-      </article>
+    <div class="project-carousel-shell mt-4">
+      <div class="owl-theme owl-carousel active_course project-carousel">
+        <article class="project-card">
+          <div class="project-card__media">
+            <img class="project-logo-fit" src="{{ '/assets/img/project/traincheck_logo.png' | relative_url }}" alt="TrainCheck" />
+          </div>
+          <div class="project-card__content">
+            <h3>Catching Silent Errors in Deep Learning Training</h3>
+            <p>TrainCheck learns semantic invariants from healthy runs and enforces checks at runtime to catch silent training errors early.</p>
+            <p class="project-badge">OSDI 2025</p>
+            <a class="button button-light" href="{{ '/paper/traincheck-osdi25-preprint.pdf' | relative_url }}" target="_blank">Read Paper</a>
+          </div>
+        </article>
 
-      <article class="project-card">
-        <div class="project-card__media">
-          <img src="{{ '/assets/img/project/trainverify.png' | relative_url }}" alt="TrainVerify figure" />
-        </div>
-        <div class="project-card__content">
-          <h3>TrainVerify: Equivalence-Based Verification for Distributed LLM Training</h3>
-          <p>TrainVerify verifies semantic equivalence across distributed LLM training executions to catch subtle correctness issues.</p>
-          <p class="project-badge">SOSP 2025</p>
-          <a class="button button-light" href="{{ '/paper/trainverify-sosp25.pdf' | relative_url }}" target="_blank">Read Paper</a>
-        </div>
-      </article>
+        <article class="project-card">
+          <div class="project-card__media">
+            <img src="{{ '/assets/img/project/trainverify.png' | relative_url }}" alt="TrainVerify figure" />
+          </div>
+          <div class="project-card__content">
+            <h3>TrainVerify: Equivalence-Based Verification for Distributed LLM Training</h3>
+            <p>TrainVerify verifies semantic equivalence across distributed LLM training executions to catch subtle correctness issues.</p>
+            <p class="project-badge">SOSP 2025</p>
+            <a class="button button-light" href="{{ '/paper/trainverify-sosp25.pdf' | relative_url }}" target="_blank">Read Paper</a>
+          </div>
+        </article>
 
-      <article class="project-card">
-        <div class="project-card__media">
-          <img src="{{ '/assets/img/project/phoenix.png' | relative_url }}" alt="Phoenix figure" />
-        </div>
-        <div class="project-card__content">
-          <h3>Phoenix: Optimistic Recovery via Partial Process State Preservation</h3>
-          <p>Phoenix improves software availability by preserving partial process state and enabling low-overhead optimistic recovery.</p>
-          <p class="project-badge">SOSP 2025</p>
-          <a class="button button-light" href="{{ '/paper/phoenix-sosp25.pdf' | relative_url }}" target="_blank">Read Paper</a>
-        </div>
-      </article>
+        <article class="project-card">
+          <div class="project-card__media">
+            <img src="{{ '/assets/img/project/phoenix.png' | relative_url }}" alt="Phoenix figure" />
+          </div>
+          <div class="project-card__content">
+            <h3>Phoenix: Optimistic Recovery via Partial Process State Preservation</h3>
+            <p>Phoenix improves availability by preserving partial process state and enabling low-overhead optimistic recovery.</p>
+            <p class="project-badge">SOSP 2025</p>
+            <a class="button button-light" href="{{ '/paper/phoenix-sosp25.pdf' | relative_url }}" target="_blank">Read Paper</a>
+          </div>
+        </article>
 
-      <article class="project-card">
-        <div class="project-card__media">
-          <img class="project-xinda-fit" src="{{ '/assets/img/project/xinda.png' | relative_url }}" alt="Xinda figure" />
-        </div>
-        <div class="project-card__content">
-          <h3>Enhancing Slow-Fault Tolerance in Distributed Systems</h3>
-          <p>Xinda diagnoses and mitigates slow faults with adaptive mechanisms tailored to modern distributed system behavior.</p>
-          <p class="project-badge">NSDI 2025</p>
-          <a class="button button-light" href="{{ '/paper/xinda-nsdi25-preprint.pdf' | relative_url }}" target="_blank">Read Paper</a>
-        </div>
-      </article>
+        <article class="project-card">
+          <div class="project-card__media">
+            <img class="project-xinda-fit" src="{{ '/assets/img/project/xinda.png' | relative_url }}" alt="Xinda figure" />
+          </div>
+          <div class="project-card__content">
+            <h3>Enhancing Slow-Fault Tolerance in Distributed Systems</h3>
+            <p>Xinda diagnoses and mitigates slow faults with adaptive mechanisms tailored to modern distributed system behavior.</p>
+            <p class="project-badge">NSDI 2025</p>
+            <a class="button button-light" href="{{ '/paper/xinda-nsdi25-preprint.pdf' | relative_url }}" target="_blank">Read Paper</a>
+          </div>
+        </article>
+      </div>
     </div>
   </div>
 </section>

@@ -33,7 +33,7 @@ $(function() {
           responsiveClass: true,
           thumbs: true,
           thumbsPrerendered: true,
-          navText: ["<img src='assets/img/prev.png'>", "<img src='assets/img/next.png'>"],
+          navText: ["<span class='carousel-arrow' aria-hidden='true'>&lsaquo;</span>", "<span class='carousel-arrow' aria-hidden='true'>&rsaquo;</span>"],
           responsive: {
             0: {
               items: 1,
