@@ -16,6 +16,9 @@
   --radius-md: 12px;
   --shadow-sm: 0 8px 24px rgba(14, 33, 61, 0.08);
   --shadow-md: 0 18px 46px rgba(14, 33, 61, 0.12);
+  --page-max: 1120px;
+  --page-gutter: 32px;
+  --page-gutter-mobile: 12px;
 }
 
 *,
@@ -104,6 +107,22 @@ a:hover {
   color: var(--ink-subtle);
 }
 
+.layout-home .side-main > section {
+  width: min(var(--page-max), calc(100% - (var(--page-gutter) * 2)));
+  max-width: var(--page-max);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.layout-home .side-main > section > .container {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
 /* Header */
 .header_area {
   position: sticky;
@@ -184,27 +203,54 @@ a:hover {
 /* Home hero */
 .hero-banner {
   position: relative;
+  isolation: isolate;
   overflow: hidden;
   border-radius: 0;
-  width: calc(100% - 24px);
-  max-width: 1230px;
+  width: 100%;
+  max-width: none;
   margin: 0 auto 28px;
-  padding: 9rem 0 6.6rem;
+  padding: 3.6rem 0 2.8rem;
+  border: 1px solid rgba(149, 179, 218, 0.2);
   background:
-    radial-gradient(44rem 22rem at 15% 12%, rgba(255, 255, 255, 0.14), transparent 72%),
-    radial-gradient(36rem 20rem at 95% 12%, rgba(14, 122, 124, 0.35), transparent 74%),
-    linear-gradient(130deg, #0f223a, #1f4f8f 55%, #0f6f72);
+    radial-gradient(42rem 20rem at 8% 8%, rgba(133, 168, 223, 0.32), transparent 70%),
+    radial-gradient(34rem 18rem at 94% 10%, rgba(23, 129, 138, 0.34), transparent 72%),
+    linear-gradient(126deg, #0d2037 0%, #163a68 56%, #145f74 100%);
   box-shadow: var(--shadow-md);
 }
 
-.hero-banner::after {
-  opacity: 0.15;
+.hero-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.1), transparent 28%),
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.035) 0 1px,
+      transparent 1px 14px
+    );
+  opacity: 0.32;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .hero-banner--sm {
   border-radius: 0;
-  width: min(1160px, calc(100% - 24px));
-  padding: 4.4rem 0 3.3rem;
+  width: 100%;
+  padding: 2.4rem 0 1.8rem;
+}
+
+.hero-banner > .container {
+  padding-left: 52px;
+  padding-right: 52px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Keep hero inner padding even when home section containers are reset. */
+.layout-home .side-main > section.hero-banner > .container {
+  padding-left: 52px;
+  padding-right: 52px;
 }
 
 .hero-banner--sm__content {
@@ -217,7 +263,7 @@ a:hover {
 }
 
 .home-hero {
-  min-height: 620px;
+  min-height: 390px;
   display: flex;
   align-items: center;
 }
@@ -225,8 +271,12 @@ a:hover {
 .home-hero__grid {
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
-  gap: 26px;
+  gap: 34px;
   align-items: center;
+}
+
+.home-hero__copy {
+  max-width: 35rem;
 }
 
 .home-kicker {
@@ -244,14 +294,17 @@ a:hover {
 
 .home-hero__copy h1 {
   color: #f5f9ff;
-  margin-bottom: 0.9rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
   text-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
 }
 
 .home-hero__copy p {
-  color: rgba(231, 241, 255, 0.97);
-  max-width: 34rem;
-  font-size: 1.05rem;
+  color: rgba(230, 239, 252, 0.94);
+  max-width: 33rem;
+  font-size: 1.03rem;
+  line-height: 1.68;
 }
 
 .home-hero__actions {
@@ -261,10 +314,22 @@ a:hover {
   margin-top: 1.2rem;
 }
 
+.home-hero__actions .button.bg {
+  border-color: #ffffff;
+  background: #ffffff;
+  color: #163a68;
+}
+
+.home-hero__actions .button.bg:hover {
+  background: #dfeaf9;
+  border-color: #dfeaf9;
+  color: #163a68;
+}
+
 .home-hero__actions .button-light {
   color: #ffffff;
-  border-color: rgba(255, 255, 255, 0.54);
-  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.52);
+  background: rgba(255, 255, 255, 0.03);
 }
 
 .home-hero__actions .button-light:hover {
@@ -300,35 +365,19 @@ a:hover {
 
 .hero-visual-card {
   border: 1px solid rgba(255, 255, 255, 0.24);
-  border-radius: 22px;
-  background: rgba(255, 255, 255, 0.09);
-  backdrop-filter: blur(5px);
-  padding: 0.95rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 22px 40px rgba(5, 16, 34, 0.3);
+  padding: 0.6rem;
 }
 
 .hero-visual-card img {
-  border-radius: 16px;
-  width: 100%;
-  display: block;
-}
-
-.hero-visual-note {
-  margin-top: 0.82rem;
   border-radius: 14px;
-  padding: 0.85rem 0.95rem;
-  background: rgba(7, 19, 36, 0.35);
-}
-
-.hero-visual-note h4 {
-  color: #f3f8ff;
-  margin-bottom: 0.2rem;
-  font-size: 0.97rem;
-}
-
-.hero-visual-note p {
-  color: rgba(233, 242, 255, 0.95);
-  margin: 0;
-  font-size: 0.86rem;
+  width: 100%;
+  max-height: 370px;
+  object-fit: contain;
+  display: block;
 }
 
 /* Panels/cards */
@@ -338,6 +387,10 @@ a:hover {
   background: rgba(255, 255, 255, 0.78);
   box-shadow: var(--shadow-sm);
   padding: 2rem;
+  width: 100%;
+  max-width: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card-feature,
@@ -951,7 +1004,17 @@ a:hover {
   .hero-banner {
     width: 100%;
     border-radius: 0;
-    padding: 7.4rem 0 4.8rem;
+    padding: 3rem 0 2.2rem;
+  }
+
+  .hero-banner > .container {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+
+  .layout-home .side-main > section.hero-banner > .container {
+    padding-left: 26px;
+    padding-right: 26px;
   }
 
   .home-hero {
@@ -960,6 +1023,7 @@ a:hover {
 
   .home-hero__grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .home-hero__kpis {
@@ -970,7 +1034,15 @@ a:hover {
   .layout-default .side-main > section.section-margin > .container,
   .layout-single .side-main > section.section-margin > .container {
     padding: 1.25rem;
+    width: calc(100% - 24px);
+    max-width: none;
   }
+
+  .layout-home .side-main > section {
+    width: calc(100% - (var(--page-gutter-mobile) * 2));
+    max-width: none;
+  }
+
 
   .scope-panel {
     grid-template-columns: 1fr;
@@ -994,6 +1066,14 @@ a:hover {
   .section-margin {
     margin-top: 52px;
     margin-bottom: 52px;
+  }
+
+  .hero-banner {
+    padding: 2.5rem 0 1.8rem;
+  }
+
+  .hero-banner--sm {
+    padding: 1.7rem 0 1.2rem;
   }
 
   .home-hero__kpis {

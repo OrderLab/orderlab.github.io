@@ -5,7 +5,6 @@ layout: home
   <div class="container">
     <div class="home-hero__grid">
       <div class="home-hero__copy">
-        <span class="home-kicker">University of Michigan · Systems Research</span>
         <h1>Ordered Systems Lab</h1>
         <p>
           We design dependable computer systems for cloud, distributed, and ML platforms.
@@ -16,77 +15,16 @@ layout: home
           <a class="button bg" href="{{ '/about/' | relative_url }}">About the Lab</a>
           <a class="button button-light" href="{{ '/join/' | relative_url }}">Join Us</a>
         </div>
-        <div class="home-hero__kpis">
-          <div class="home-kpi">
-            <strong>4</strong>
-            <span>Core Areas</span>
-          </div>
-          <div class="home-kpi">
-            <strong>20+</strong>
-            <span>Top-Tier Papers</span>
-          </div>
-          <div class="home-kpi">
-            <strong>3</strong>
-            <span>Best Paper Awards</span>
-          </div>
-        </div>
       </div>
       <div class="home-hero__visual">
         <div class="hero-visual-card">
           <img class="img-fluid" src="{{ '/assets/img/banner/hero-banner.png' | relative_url }}" alt="OrderLab illustration">
-          <div class="hero-visual-note">
-            <h4>Order Research Principles</h4>
-            <p>Operating · Reliable · Defensible · Efficient · Responsive</p>
-          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 <!--================ End banner =================-->
-
-<!--================ Start research interests section =================-->
-<section class="section-margin section-shell">
-  <div class="container">
-    <div class="section-intro text-center">
-      <h2 class="section-intro__title">Research Pillars</h2>
-      <p class="section-intro__subtitle">
-        We focus on reliability and fault tolerance across modern systems stacks.
-        Projects are designed to be practical, measurable, and deployable.
-      </p>
-    </div>
-    <div class="row mt-4">
-      <div class="col-lg-4">
-        <div class="card card-feature text-center text-lg-left mb-4 mb-lg-0">
-          <span class="card-feature__icon">
-            <i class="flaticon-warning"></i>
-          </span>
-          <h3 class="card-feature__title">Problem-Driven</h3>
-          <p class="card-feature__subtitle">We start from concrete failures seen in real systems and design robust solutions with direct operational value.</p>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="card card-feature text-center text-lg-left mb-4 mb-lg-0">
-          <span class="card-feature__icon">
-            <i class="flaticon-overlap"></i>
-          </span>
-          <h3 class="card-feature__title">Cross-Layer Methods</h3>
-          <p class="card-feature__subtitle">Our projects bridge operating systems, program analysis, software engineering, and machine learning workflows.</p>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="card card-feature text-center text-lg-left mb-4 mb-lg-0">
-          <span class="card-feature__icon">
-            <i class="flaticon-fireworks"></i>
-          </span>
-          <h3 class="card-feature__title">Impact-Seeking</h3>
-          <p class="card-feature__subtitle">We work with industry partners and evaluate ideas in realistic environments to maximize external impact.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!--================ End research interests section =================-->
 
 <!--================ Start scope section =================-->
 <section class="section-margin">
@@ -115,7 +53,6 @@ layout: home
   <div class="container">
     <div class="section-intro text-center">
       <h2 class="section-intro__title">Recent Projects</h2>
-      <p class="section-intro__subtitle">Representative systems and tooling from recent lab work.</p>
     </div>
     <div class="project-carousel-shell mt-4">
       <div class="owl-theme owl-carousel active_course project-carousel">
@@ -125,7 +62,7 @@ layout: home
           </div>
           <div class="project-card__content">
             <h3>Catching Silent Errors in Deep Learning Training</h3>
-            <p>TrainCheck learns semantic invariants from healthy runs and enforces checks at runtime to catch silent training errors early.</p>
+            <p>TrainCheck learns semantic invariants from sample pipelines and enforces proactive checks at runtime to catch silent training errors early.</p>
             <p class="project-badge">OSDI 2025</p>
             <a class="button button-light" href="{{ '/paper/traincheck-osdi25-preprint.pdf' | relative_url }}" target="_blank">Read Paper</a>
           </div>
@@ -136,8 +73,8 @@ layout: home
             <img src="{{ '/assets/img/project/trainverify.png' | relative_url }}" alt="TrainVerify figure" />
           </div>
           <div class="project-card__content">
-            <h3>TrainVerify: Equivalence-Based Verification for Distributed LLM Training</h3>
-            <p>TrainVerify verifies semantic equivalence across distributed LLM training executions to catch subtle correctness issues.</p>
+            <h3>Equivalence-Based Verification for Distributed Training</h3>
+            <p>TrainVerify verifies the parallelization logic of LLM training to eliminate subtle correctness bugs.</p>
             <p class="project-badge">SOSP 2025</p>
             <a class="button button-light" href="{{ '/paper/trainverify-sosp25.pdf' | relative_url }}" target="_blank">Read Paper</a>
           </div>
@@ -148,10 +85,22 @@ layout: home
             <img src="{{ '/assets/img/project/phoenix.png' | relative_url }}" alt="Phoenix figure" />
           </div>
           <div class="project-card__content">
-            <h3>Phoenix: Optimistic Recovery via Partial Process State Preservation</h3>
-            <p>Phoenix improves availability by preserving partial process state and enabling low-overhead optimistic recovery.</p>
+            <h3>Optimistic Recovery via Partial Process State Preservation</h3>
+            <p>Phoenix introduces OS-level mechanisms of partial process state preservation and optimistic recovery to improve application availability.</p>
             <p class="project-badge">SOSP 2025</p>
             <a class="button button-light" href="{{ '/paper/phoenix-sosp25.pdf' | relative_url }}" target="_blank">Read Paper</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__media">
+            <img src="{{ '/assets/img/project/atropos.png' | relative_url }}" alt="Atropos figure" />
+          </div>
+          <div class="project-card__content">
+            <h3>Mitigating Application Resource Overload with Targeted Task Cancellation</h3>
+            <p>Atropos is an overload control framework that uses targeted task cancellation to reduce application resource overload.</p>
+            <p class="project-badge">SOSP 2025</p>
+            <a class="button button-light" href="{{ '/paper/atropos-sosp25.pdf' | relative_url }}" target="_blank">Read Paper</a>
           </div>
         </article>
 
