@@ -16,7 +16,7 @@ layout: home
             practices in building next-generation dependable systems for emerging
             platforms. In the process of achieving this goal, we strive to train
           top-notch systems researchers.</p>
-          <a class="button bg" href="about.html">More About US</a>
+          <a class="button bg" href="{{ '/about/' | relative_url }}">More About US</a>
         </div>
       </div>
     </div>
@@ -172,6 +172,37 @@ layout: home
   </div>
 </div>
 <!--================ End recent projects section =================-->
+
+<!--================ Start blog preview section =================-->
+<section class="section-margin">
+  <div class="container">
+    <div class="section-intro pb-85px text-center">
+      <h2 class="section-intro__title">From the Blog</h2>
+      <p class="section-intro__subtitle">Updates on systems research, student milestones, and lab engineering practices.</p>
+    </div>
+    {% assign featured_posts = site.posts | slice: 0, 3 %}
+    {% if featured_posts.size > 0 %}
+    <div class="blog-grid">
+      {% for post in featured_posts %}
+      <article class="blog-card">
+        <div class="meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} · {{ post.author }}{% endif %}</div>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
+        <a class="button button-light" href="{{ post.url | relative_url }}">Read Post</a>
+      </article>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="blog-empty">
+      Blog posts will appear here once they are published. You can already visit the blog home page to start writing.
+    </div>
+    {% endif %}
+    <div class="text-center mt-4">
+      <a class="button button-light" href="{{ '/blog/' | relative_url }}">View All Posts</a>
+    </div>
+  </div>
+</section>
+<!--================ End blog preview section =================-->
 
 <!--================ Start sponsor section =================-->
 <section class="sponsors_logo_area section-padding">

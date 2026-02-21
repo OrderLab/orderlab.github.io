@@ -1,0 +1,28 @@
+---
+layout: default
+title: Blog
+---
+<section class="section-margin">
+  <div class="container">
+    <div class="section-intro pb-85px text-center">
+      <h2 class="section-intro__title">OrderLab Blog</h2>
+      <p class="section-intro__subtitle">Technical notes, research context, and lab updates.</p>
+    </div>
+    {% if site.posts.size > 0 %}
+    <div class="blog-grid">
+      {% for post in site.posts %}
+      <article class="blog-card">
+        <div class="meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} · {{ post.author }}{% endif %}</div>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
+        <a class="button button-light" href="{{ post.url | relative_url }}">Read Post</a>
+      </article>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="blog-empty">
+      No posts yet. Add markdown files under <code>_posts/</code> using <code>YYYY-MM-DD-title.md</code>.
+    </div>
+    {% endif %}
+  </div>
+</section>

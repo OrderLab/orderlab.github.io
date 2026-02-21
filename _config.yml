@@ -6,12 +6,21 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: OrderLab
+permalink: /blog/:year/:month/:day/:title/
 
 # Build settings
 markdown: kramdown
 theme: minima
 plugins:
   - jekyll-last-modified-at
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      author: OrderLab
 
 exclude:
   - Gemfile
