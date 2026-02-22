@@ -100,7 +100,14 @@ layout: home
             <h3>Catching Silent Errors in Deep Learning Training</h3>
             <p>TrainCheck learns semantic invariants from sample pipelines and enforces proactive checks at runtime to catch silent training errors early.</p>
             <p class="project-badge">OSDI 2025</p>
-            <a class="button button-light" href="{{ '/paper/traincheck-osdi25-preprint.pdf' | relative_url }}" target="_blank">Read Paper</a>
+            <div class="project-links" aria-label="TrainCheck links">
+              <a class="project-link-icon" href="{{ '/paper/traincheck-osdi25-preprint.pdf' | relative_url }}" target="_blank" rel="noopener" title="Paper">
+                <i class="fas fa-file-alt" aria-hidden="true"></i><span>Paper</span>
+              </a>
+              <a class="project-link-icon" href="https://github.com/OrderLab/TrainCheck" target="_blank" rel="noopener" title="Software">
+                <i class="fab fa-github" aria-hidden="true"></i><span>Software</span>
+              </a>
+            </div>
           </div>
         </article>
 
@@ -112,7 +119,14 @@ layout: home
             <h3>Equivalence-Based Verification for Distributed Training</h3>
             <p>TrainVerify verifies the parallelization logic of LLM training to eliminate subtle correctness bugs.</p>
             <p class="project-badge">SOSP 2025</p>
-            <a class="button button-light" href="{{ '/paper/trainverify-sosp25.pdf' | relative_url }}" target="_blank">Read Paper</a>
+            <div class="project-links" aria-label="TrainVerify links">
+              <a class="project-link-icon" href="{{ '/paper/trainverify-sosp25.pdf' | relative_url }}" target="_blank" rel="noopener" title="Paper">
+                <i class="fas fa-file-alt" aria-hidden="true"></i><span>Paper</span>
+              </a>
+              <a class="project-link-icon" href="https://github.com/verify-llm/TrainVerify" target="_blank" rel="noopener" title="Software">
+                <i class="fab fa-github" aria-hidden="true"></i><span>Software</span>
+              </a>
+            </div>
           </div>
         </article>
 
@@ -124,7 +138,14 @@ layout: home
             <h3>Optimistic Recovery via Partial Process State Preservation</h3>
             <p>Phoenix introduces OS-level mechanisms of partial process state preservation and optimistic recovery to improve application availability.</p>
             <p class="project-badge">SOSP 2025</p>
-            <a class="button button-light" href="{{ '/paper/phoenix-sosp25.pdf' | relative_url }}" target="_blank">Read Paper</a>
+            <div class="project-links" aria-label="Phoenix links">
+              <a class="project-link-icon" href="{{ '/paper/phoenix-sosp25.pdf' | relative_url }}" target="_blank" rel="noopener" title="Paper">
+                <i class="fas fa-file-alt" aria-hidden="true"></i><span>Paper</span>
+              </a>
+              <a class="project-link-icon" href="https://github.com/OrderLab/phoenix" target="_blank" rel="noopener" title="Software">
+                <i class="fab fa-github" aria-hidden="true"></i><span>Software</span>
+              </a>
+            </div>
           </div>
         </article>
 
@@ -136,7 +157,14 @@ layout: home
             <h3>Mitigating Application Resource Overload with Targeted Task Cancellation</h3>
             <p>Atropos is an overload control framework that uses targeted task cancellation to reduce application resource overload.</p>
             <p class="project-badge">SOSP 2025</p>
-            <a class="button button-light" href="{{ '/paper/atropos-sosp25.pdf' | relative_url }}" target="_blank">Read Paper</a>
+            <div class="project-links" aria-label="Atropos links">
+              <a class="project-link-icon" href="{{ '/paper/atropos-sosp25.pdf' | relative_url }}" target="_blank" rel="noopener" title="Paper">
+                <i class="fas fa-file-alt" aria-hidden="true"></i><span>Paper</span>
+              </a>
+              <a class="project-link-icon" href="https://github.com/OrderLab/Atropos" target="_blank" rel="noopener" title="Software">
+                <i class="fab fa-github" aria-hidden="true"></i><span>Software</span>
+              </a>
+            </div>
           </div>
         </article>
 
@@ -148,7 +176,14 @@ layout: home
             <h3>Enhancing Slow-Fault Tolerance in Distributed Systems</h3>
             <p>Xinda diagnoses and mitigates slow faults with adaptive mechanisms tailored to modern distributed system behavior.</p>
             <p class="project-badge">NSDI 2025</p>
-            <a class="button button-light" href="{{ '/paper/xinda-nsdi25-preprint.pdf' | relative_url }}" target="_blank">Read Paper</a>
+            <div class="project-links" aria-label="Xinda links">
+              <a class="project-link-icon" href="{{ '/paper/xinda-nsdi25-preprint.pdf' | relative_url }}" target="_blank" rel="noopener" title="Paper">
+                <i class="fas fa-file-alt" aria-hidden="true"></i><span>Paper</span>
+              </a>
+              <a class="project-link-icon" href="https://github.com/OrderLab/xinda" target="_blank" rel="noopener" title="Software">
+                <i class="fab fa-github" aria-hidden="true"></i><span>Software</span>
+              </a>
+            </div>
           </div>
         </article>
       </div>
@@ -159,13 +194,13 @@ layout: home
 
 
 <!--================ Start blog preview section =================-->
-<section class="section-margin section-shell">
+<section class="section-margin section-shell blog-preview-section">
   <div class="container">
     <div class="section-intro text-center">
       <h2 class="section-intro__title">From the Blog</h2>
       <p class="section-intro__subtitle">Updates on lab research, milestones, and practices.</p>
     </div>
-    {% assign featured_posts = site.posts | slice: 0, 3 %}
+    {% assign featured_posts = site.posts | slice: 0, 2 %}
     {% if featured_posts.size > 0 %}
     <div class="blog-grid">
       {% for post in featured_posts %}
@@ -182,7 +217,7 @@ layout: home
       Blog posts will appear here once they are published. You can already visit the blog home page to start writing.
     </div>
     {% endif %}
-    <div class="text-center mt-4">
+    <div class="text-center mt-4 blog-preview-section__actions">
       <a class="button button-light" href="{{ '/blog/' | relative_url }}">View All Posts</a>
     </div>
   </div>

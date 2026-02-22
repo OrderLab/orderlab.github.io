@@ -35,17 +35,20 @@ Current U-M students can make an appointment with me via email.
 
 ## Useful Links
 
-##### For students considering a PhD
+### For students considering a PhD
+
 * [The illustrated guide to a Ph.D](http://matt.might.net/articles/phd-school-in-pictures/) by [Matt Might](http://matt.might.net/)
 * [PhD or No PhD](https://medium.com/open-sourced-thoughts/phd-or-no-phd-d3dc89bc8e57) by [Xiao Ma](https://medium.com/@xiaoma)
 * [The PhD grind](http://pgbovine.net/PhD-memoir/pguo-PhD-grind.pdf) by [Philip Guo](http://pgbovine.net/index.html)
 
-##### For students applying for a PhD
+### For students applying for a PhD
+
 * [How to Pick a Graduate Advisor](http://www.cell.com/neuron/fulltext/S0896-6273(13)00907-0) by [Ben Barres](https://profiles.stanford.edu/ben-barres)
 * [What to Ask When You're Applying to Grad School](http://transientneha.blogspot.com/2015/02/what-to-ask-when-applying-to-grad.html) by [Neha Narula](http://transientneha.blogspot.com/)
 * [Applying to Ph.D. Programs in Computer Science](http://www.cs.cmu.edu/~harchol/gradschooltalk.pdf) by [Mor Harchol-Balter](http://www.cs.cmu.edu/~harchol/)
 
-##### For students doing a PhD
+### For students doing a PhD
+
 * [So Long, and Thanks for the Ph.D!](http://www.cs.unc.edu/~azuma/hitch4.html) by [Ron Azuma](http://www.cs.unc.edu/~azuma/)
 * [You and Your Research](http://www.cs.virginia.edu/~robins/YouAndYourResearch.html) by Richard Hamming
 * [Strong Inference](http://ecoplexity.org/files/Platt.pdf) by John R. Platt
