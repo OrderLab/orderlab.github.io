@@ -1,6 +1,32 @@
 $(function() {
   "use strict";
 
+    function applyTheme(theme) {
+      var mode = theme === "dark" ? "dark" : "light";
+      document.documentElement.setAttribute("data-theme", mode);
+      var $toggle = $("[data-theme-toggle]");
+      if ($toggle.length) {
+        var isDark = mode === "dark";
+        $toggle.attr("aria-pressed", isDark ? "true" : "false");
+      }
+    }
+
+    function initThemeToggle() {
+      var stored = null;
+      try { stored = localStorage.getItem("orderlab-theme"); } catch (e) {}
+      var current = stored || document.documentElement.getAttribute("data-theme") || "light";
+      applyTheme(current);
+
+      $(document).on("click", "[data-theme-toggle]", function() {
+        var active = document.documentElement.getAttribute("data-theme") || "light";
+        var next = active === "dark" ? "light" : "dark";
+        applyTheme(next);
+        try { localStorage.setItem("orderlab-theme", next); } catch (e) {}
+      });
+    }
+
+    initThemeToggle();
+
   var nav_offset_top = $('header').height() + 50;
     /*-------------------------------------------------------------------------------
 	  Navbar

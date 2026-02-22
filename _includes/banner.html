@@ -2,7 +2,7 @@
   <div class="main_menu">
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container box_1620">
-        <a class="navbar-brand logo_h" href="{{ '/' | relative_url }}"><img src="{{ '/assets/img/logo-dark.png' | relative_url }}" alt="OrderLab"></a>
+        <a class="navbar-brand logo_h" href="{{ '/' | relative_url }}"><img src="{{ '/assets/img/logo-gray.png' | relative_url }}" alt="OrderLab"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -17,6 +17,16 @@
             <li class="nav-item {% if current[1] == 'blog' %}active{% endif %}"><a class="nav-link" href="{{ '/blog/' | relative_url }}">Blog</a></li>
             <li class="nav-item"><a class="nav-link" href="https://orderlab.io/reading-group" target="_blank">Reading</a></li>
             <li class="nav-item {% if current[1] == 'join' %}active{% endif %}"><a class="nav-link" href="{{ '/join/' | relative_url }}">Join</a></li>
+            <li class="nav-item nav-item--theme">
+              <button
+                class="theme-toggle"
+                type="button"
+                data-theme-toggle
+                aria-label="Toggle theme"
+                aria-pressed="false">
+                <i class="fas fa-adjust theme-toggle__icon" aria-hidden="true"></i>
+              </button>
+            </li>
           </ul>
         </div>
       </div>
