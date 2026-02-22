@@ -11,6 +11,16 @@
 
   <title>OrderLab Team Members</title>
 
+  <script>
+    (function() {
+      var stored = null;
+      try { stored = localStorage.getItem("orderlab-theme"); } catch (e) {}
+      var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      var theme = stored || (prefersDark ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+
   <!-- CSS -->
   <link rel="shortcut icon" href="/assets/favicon.ico">
   <link rel="stylesheet" href="/vendors/bootstrap/bootstrap.min.css">
@@ -19,15 +29,16 @@
   <link rel="stylesheet" href="/vendors/flaticon/flaticon.css" />
   <link rel="stylesheet" href="/vendors/owl-carousel/owl.carousel.min.css">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/modern.css">
   <link rel="stylesheet" href="/assets/css/site.css">
 </head>
 
-  <body>
+  <body class="layout-default page-orderlab-team-members">
   	<header class="header_area">
   <div class="main_menu">
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container box_1620">
-        <a class="navbar-brand logo_h" href="/index.html"><img src="/assets/img/logo.png" alt=""></a>
+        <a class="navbar-brand logo_h" href="/"><img src="/assets/img/logo-gray.png" alt="OrderLab"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -36,14 +47,22 @@
         <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
           
           <ul class="nav navbar-nav menu_nav justify-content-end">
-            <li class="nav-item "><a class="nav-link" href="/index.html">Home</a></li>
-            <li class="nav-item "><a class="nav-link" href="/team.html">People</a></li>
-            <li class="nav-item "><a class="nav-link" href="/news.html">News</a></li>
-            <li class="nav-item "><a class="nav-link" href="/pubs.html">Publications</a>
-            <li class="nav-item "><a class="nav-link" href="/projects.html">Projects</a></li>
-            <li class="nav-item "><a class="nav-link" href="/software.html">Software</a></li>
+            <li class="nav-item "><a class="nav-link" href="/">Home</a></li>
+            <li class="nav-item active"><a class="nav-link" href="/team/">Team</a></li>
+            <li class="nav-item "><a class="nav-link" href="/pubs/">Publications</a></li>
+            <li class="nav-item "><a class="nav-link" href="/blog/">Blog</a></li>
             <li class="nav-item"><a class="nav-link" href="https://orderlab.io/reading-group" target="_blank">Reading</a></li>
-            <li class="nav-item "><a class="nav-link" href="/join.html">Join</a></li>
+            <li class="nav-item "><a class="nav-link" href="/join/">Join</a></li>
+            <li class="nav-item nav-item--theme">
+              <button
+                class="theme-toggle"
+                type="button"
+                data-theme-toggle
+                aria-label="Toggle theme"
+                aria-pressed="false">
+                <i class="fas fa-adjust theme-toggle__icon" aria-hidden="true"></i>
+              </button>
+            </li>
           </ul>
         </div>
       </div>
@@ -52,15 +71,7 @@
 </header>
 
 
-		<main class="side-main">
-      <section class="hero-banner mb-30px">
-      <div class="container">
-        <div class="hero-banner--sm__content">
-          <h1>OrderLab Team Members</h1>
-        </div>
-      </div>
-      </section>
-      <!--================ End banner =================-->
+	<main class="side-main">
   		<!--================ Start team members section =================-->
 <section class="team_members_area section-margin">
   <div class="container">
@@ -72,7 +83,7 @@
     <div class="row justify-content-left d-flex align-items-left">
       <div class="col-lg-3 col-md-6 col-sm-12 single-team-member">
         <div class="thumb d-flex justify-content-sm-center">
-          <img class="img-team" src="assets/img/team/ryan.jpg" alt="" />
+          <img class="img-team" src="/assets/img/team/ryan.jpg" alt="" />
         </div>
         <div class="meta-text text-sm-center">
           <h4><a href="https://web.eecs.umich.edu/~ryanph">Prof. Ryan Huang</a></h4>
@@ -87,7 +98,7 @@
     <div class="row justify-content-left d-flex align-items-left">
       <div class="col-lg-3 col-md-6 col-sm-12 single-team-member">
         <div class="thumb d-flex justify-content-sm-center">
-          <img class="img-team" src="assets/img/team/ziming.jpg" alt="" />
+          <img class="img-team" src="/assets/img/team/ziming.jpg" alt="" />
         </div>
         <div class="meta-text text-sm-center">
           <h4><a href="https://ziming-zh.github.io">Ziming (Roger) Zhou</a></h4>
@@ -95,7 +106,7 @@
       </div>
       <div class="col-lg-3 col-md-6 col-sm-12 single-team-member">
         <div class="thumb d-flex justify-content-sm-center">
-          <img class="img-team" src="assets/img/team/yunchi.jpg" alt="" />
+          <img class="img-team" src="/assets/img/team/yunchi.jpg" alt="" />
         </div>
         <div class="meta-text text-sm-center">
           <h4><a href="https://luyunchi.github.io/">Yunchi Lu</a></h4>
@@ -103,7 +114,7 @@
       </div>
       <div class="col-lg-3 col-md-6 col-sm-12 single-team-member">
         <div class="thumb d-flex justify-content-sm-center">
-          <img class="img-team" src="assets/img/team/kevin.jpg" alt="" />
+          <img class="img-team" src="/assets/img/team/kevin.jpg" alt="" />
         </div>
         <div class="meta-text text-sm-center">
           <h4><a href="https://kevinrsx.github.io">Kevin Xue</a></h4>
@@ -112,7 +123,7 @@
       </div>
       <div class="col-lg-3 col-md-6 col-sm-12 single-team-member">
         <div class="thumb d-flex justify-content-sm-center">
-          <img class="img-team" src="assets/img/team/wanning.jpg" alt="" />
+          <img class="img-team" src="/assets/img/team/wanning.jpg" alt="" />
         </div>
         <div class="meta-text text-sm-center">
           <h4><a href="https://hwanning.netlify.app/">Wanning He</a></h4>
@@ -120,7 +131,7 @@
       </div>
       <div class="col-lg-3 col-md-6 col-sm-12 single-team-member">
         <div class="thumb d-flex justify-content-sm-center">
-          <img class="img-team" src="assets/img/team/yi.jpg" alt="" />
+          <img class="img-team" src="/assets/img/team/yi.jpg" alt="" />
         </div>
         <div class="meta-text text-sm-center">
           <h4><a href="https://chenyi.world/">Yi Chen</a></h4>
@@ -128,18 +139,10 @@
       </div>
       <div class="col-lg-3 col-md-6 col-sm-12 single-team-member">
         <div class="thumb d-flex justify-content-sm-center">
-          <img class="img-team" src="assets/img/team/yuxuan.jpg" alt="" />
+          <img class="img-team" src="/assets/img/team/yuxuan.jpg" alt="" />
         </div>
         <div class="meta-text text-sm-center">
           <h4><a href="https://essoz.github.io/">Yuxuan Jiang</a></h4>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-12 single-team-member">
-        <div class="thumb d-flex justify-content-sm-center">
-          <img class="img-team" src="assets/img/team/yuzhuo.jpg" alt="" />
-        </div>
-        <div class="meta-text text-sm-center">
-          <h4><a href="https://osdi.dev">Yuzhuo Jing</a></h4>
         </div>
       </div>
     </div>
@@ -151,7 +154,7 @@
     <div class="row justify-content-left d-flex align-items-left">
       <div class="col-lg-3 col-md-6 col-sm-12 single-team-member">
         <div class="thumb d-flex justify-content-sm-center">
-          <img class="img-team" src="assets/img/team/rishika.jpg" alt="" />
+          <img class="img-team" src="/assets/img/team/rishika.jpg" alt="" />
         </div>
         <div class="meta-text text-sm-center">
           <b>Rishika Kalidindi</b>
@@ -159,7 +162,7 @@
       </div>
       <div class="col-lg-3 col-md-6 col-sm-12 single-team-member">
         <div class="thumb d-flex justify-content-sm-center">
-          <img class="img-team" src="assets/img/team/xunjie.jpg" alt="" />
+          <img class="img-team" src="/assets/img/team/xunjie.jpg" alt="" />
         </div>
         <div class="meta-text text-sm-center">
           <b>Xunjie Wang</b> (SJTU)
@@ -174,7 +177,7 @@
     <div class="row justify-content-left d-flex align-items-left">
       <div class="col-lg-3 col-md-6 col-sm-12 single-team-member">
         <div class="thumb d-flex justify-content-sm-center">
-          <img class="img-team" src="assets/img/team/haoran.jpg" alt="" />
+          <img class="img-team" src="/assets/img/team/haoran.jpg" alt="" />
         </div>
         <div class="meta-text text-sm-center">
           <b><a href="http://www.linkedin.com/in/haoran-zhang-204764344">Haoran Zhang</a></b>
@@ -182,7 +185,7 @@
       </div>
       <div class="col-lg-3 col-md-6 col-sm-12 single-team-member">
         <div class="thumb d-flex justify-content-sm-center">
-          <img class="img-team" src="assets/img/team/mahdi.jpg" alt="" />
+          <img class="img-team" src="/assets/img/team/mahdi.jpg" alt="" />
         </div>
         <div class="meta-text text-sm-center">
           <b>Mahdi Haji</b> (UT)
@@ -190,7 +193,7 @@
       </div>
       <div class="col-lg-3 col-md-6 col-sm-12 single-team-member">
         <div class="thumb d-flex justify-content-sm-center">
-          <img class="img-team" src="assets/img/team/mason.jpg" alt="" />
+          <img class="img-team" src="/assets/img/team/mason.jpg" alt="" />
         </div>
         <div class="meta-text text-sm-center">
           <b><a href="https://masonmil.com">Mason Miller</a></b>
@@ -198,7 +201,7 @@
       </div>
       <div class="col-lg-3 col-md-6 col-sm-12 single-team-member">
         <div class="thumb d-flex justify-content-sm-center">
-          <img class="img-team" src="assets/img/team/xiayang.jpg" alt="" />
+          <img class="img-team" src="/assets/img/team/xiayang.jpg" alt="" />
         </div>
         <div class="meta-text text-sm-center">
           <b><a href="http://github.com/au-summer">Xiayang Jin</a></b>
@@ -206,7 +209,7 @@
       </div>
       <div class="col-lg-3 col-md-6 col-sm-12 single-team-member">
         <div class="thumb d-flex justify-content-sm-center">
-          <img class="img-team" src="assets/img/team/yinjie.jpg" alt="" />
+          <img class="img-team" src="/assets/img/team/yinjie.jpg" alt="" />
         </div>
         <div class="meta-text text-sm-center">
           <b>Yinjie Zhao</b>
@@ -214,7 +217,7 @@
       </div>
       <div class="col-lg-3 col-md-6 col-sm-12 single-team-member">
         <div class="thumb d-flex justify-content-sm-center">
-          <img class="img-team" src="assets/img/team/noimage.jpg" alt="" />
+          <img class="img-team" src="/assets/img/team/noimage.jpg" alt="" />
         </div>
         <div class="meta-text text-sm-center">
           <b>Yinwei Huang</b> (SJTU)
@@ -222,7 +225,7 @@
       </div>
       <div class="col-lg-3 col-md-6 col-sm-12 single-team-member">
         <div class="thumb d-flex justify-content-sm-center">
-          <img class="img-team" src="assets/img/team/yuchen.jpg" alt="" />
+          <img class="img-team" src="/assets/img/team/yuchen.jpg" alt="" />
         </div>
         <div class="meta-text text-sm-center">
           <b><a href="https://www.whoami-wesleyyou.top/about/">Yuchen You</a></b>
@@ -230,7 +233,7 @@
       </div>
       <div class="col-lg-3 col-md-6 col-sm-12 single-team-member">
         <div class="thumb d-flex justify-content-sm-center">
-          <img class="img-team" src="assets/img/team/juntao.jpg" alt="" />
+          <img class="img-team" src="/assets/img/team/juntao.jpg" alt="" />
         </div>
         <div class="meta-text text-sm-center">
           <b><a href="https://github.com/flowithin">Thomas Wu</a></b>
@@ -248,6 +251,7 @@
       <li><b><a href="https://portugasian.github.io">Dr. Brian Choi</a></b> &rarr; Researcher at Applied Physics Lab</li>
       <li><b><a href="https://www.cs.jhu.edu/~hwu80">Dr. Haoze Wu</a></b> &rarr; Software Engineer at ByteDance</li>
       <li><b><a href="https://ruiming-lu.github.io">Dr. Ruiming Lu</a></b> (Visiting PhD at SJTU) &rarr; Software Engineer at Tencent</li>
+      <li><b><a href="https://osdi.dev">Dr. Yuzhuo Jing</a></b> &rarr; Software Engineer at Google</li>
     </ul>
     <br>
     <div class="row justify-content-left">
@@ -304,14 +308,14 @@
     <p class="footer-text m-0 col-lg-8 col-md-12">
       Copyright &copy; OrderLab 2017-<script>
  document.write(new Date().getFullYear());
-      </script> All rights reserved. | Last updated 2025-11-18 13:19:04 -0500.
+      </script> All rights reserved. | Last updated 2026-02-21 22:16:32 -0500.
     </p>
   </div>
 </div>
 </footer>
 <!-- ================ End footer area ================= -->
 
-		</main>
+	</main>
     <script src="/vendors/jquery/jquery-3.2.1.min.js"></script>
 <script src="/vendors/bootstrap/bootstrap.bundle.min.js"></script>
 <script src="/vendors/owl-carousel/owl.carousel.min.js"></script>

@@ -9,7 +9,17 @@
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <title>Oops! Page not found :(</title>
+  <title>Blog</title>
+
+  <script>
+    (function() {
+      var stored = null;
+      try { stored = localStorage.getItem("orderlab-theme"); } catch (e) {}
+      var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      var theme = stored || (prefersDark ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
 
   <!-- CSS -->
   <link rel="shortcut icon" href="/assets/favicon.ico">
@@ -19,15 +29,16 @@
   <link rel="stylesheet" href="/vendors/flaticon/flaticon.css" />
   <link rel="stylesheet" href="/vendors/owl-carousel/owl.carousel.min.css">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/modern.css">
   <link rel="stylesheet" href="/assets/css/site.css">
 </head>
 
-  <body>
+  <body class="layout-default page-blog">
   	<header class="header_area">
   <div class="main_menu">
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container box_1620">
-        <a class="navbar-brand logo_h" href="/index.html"><img src="/assets/img/logo.png" alt=""></a>
+        <a class="navbar-brand logo_h" href="/"><img src="/assets/img/logo-gray.png" alt="OrderLab"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -36,14 +47,22 @@
         <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
           
           <ul class="nav navbar-nav menu_nav justify-content-end">
-            <li class="nav-item "><a class="nav-link" href="/index.html">Home</a></li>
-            <li class="nav-item "><a class="nav-link" href="/team.html">People</a></li>
-            <li class="nav-item "><a class="nav-link" href="/news.html">News</a></li>
-            <li class="nav-item "><a class="nav-link" href="/pubs.html">Publications</a>
-            <li class="nav-item "><a class="nav-link" href="/projects.html">Projects</a></li>
-            <li class="nav-item "><a class="nav-link" href="/software.html">Software</a></li>
+            <li class="nav-item "><a class="nav-link" href="/">Home</a></li>
+            <li class="nav-item "><a class="nav-link" href="/team/">Team</a></li>
+            <li class="nav-item "><a class="nav-link" href="/pubs/">Publications</a></li>
+            <li class="nav-item active"><a class="nav-link" href="/blog/">Blog</a></li>
             <li class="nav-item"><a class="nav-link" href="https://orderlab.io/reading-group" target="_blank">Reading</a></li>
-            <li class="nav-item "><a class="nav-link" href="/join.html">Join</a></li>
+            <li class="nav-item "><a class="nav-link" href="/join/">Join</a></li>
+            <li class="nav-item nav-item--theme">
+              <button
+                class="theme-toggle"
+                type="button"
+                data-theme-toggle
+                aria-label="Toggle theme"
+                aria-pressed="false">
+                <i class="fas fa-adjust theme-toggle__icon" aria-hidden="true"></i>
+              </button>
+            </li>
           </ul>
         </div>
       </div>
@@ -52,20 +71,36 @@
 </header>
 
 
-		<main class="side-main">
-      <section class="hero-banner mb-30px">
-      <div class="container">
-        <div class="hero-banner--sm__content">
-          <h1>Oops! Page not found :(</h1>
-        </div>
-      </div>
-      </section>
-      <!--================ End banner =================-->
-  		<section class="section-margin">
+	<main class="side-main">
+  		<section class="section-margin blog-hub">
   <div class="container">
-  	<img class="img-fuild" src="/assets/img/404.jpg" height="600px" alt=""></img>
+    <header class="blog-hub__head">
+      <h1>OrderLab Research Notes and Updates</h1>
+    </header>
+    
+    <div class="blog-hub__list">
+      
+      <article class="blog-hub__item">
+        <div class="blog-hub__meta">Feb 21, 2026 · OrderLab</div>
+        <h3><a href="/blog/2026/02/21/writing-posts-for-this-site/">Writing Posts for This Site</a></h3>
+        <p>Blog entries are standard Jekyll posts. Create a markdown file under _posts/ with this naming pattern:
+</p>
+        <a class="blog-hub__read" href="/blog/2026/02/21/writing-posts-for-this-site/">Read article</a>
+      </article>
+      
+      <article class="blog-hub__item">
+        <div class="blog-hub__meta">Feb 21, 2026 · Ryan Huang</div>
+        <h3><a href="/blog/2026/02/21/launching-orderlab-blog/">Launching the OrderLab Blog</a></h3>
+        <p>We have added a dedicated blog to the lab website to share technical updates in a faster, more narrative format than conference papers.
+</p>
+        <a class="blog-hub__read" href="/blog/2026/02/21/launching-orderlab-blog/">Read article</a>
+      </article>
+      
+    </div>
+    
   </div>
 </section>
+
     	<!-- ================ Start footer area ================= -->
 <footer class="footer-area section-gap">
 <div class="container">
@@ -73,14 +108,14 @@
     <p class="footer-text m-0 col-lg-8 col-md-12">
       Copyright &copy; OrderLab 2017-<script>
  document.write(new Date().getFullYear());
-      </script> All rights reserved. | Last updated 2025-04-30 22:19:44 -0400.
+      </script> All rights reserved. | Last updated 2026-02-21 22:14:27 -0500.
     </p>
   </div>
 </div>
 </footer>
 <!-- ================ End footer area ================= -->
 
-		</main>
+	</main>
     <script src="/vendors/jquery/jquery-3.2.1.min.js"></script>
 <script src="/vendors/bootstrap/bootstrap.bundle.min.js"></script>
 <script src="/vendors/owl-carousel/owl.carousel.min.js"></script>

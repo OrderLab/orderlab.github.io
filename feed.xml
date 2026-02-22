@@ -1,1 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2026-01-28T00:46:55-05:00</updated><id>/feed.xml</id><title type="html">Ordered Systems Lab at U-M</title><subtitle>This is the website for the Ordered Systems Lab (a.k.a Order Lab) at University of Michigan, led by Prof. Ryan Huang.</subtitle></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2026-02-21T23:07:57-05:00</updated><id>/feed.xml</id><title type="html">Ordered Systems Lab at U-M</title><subtitle>This is the website for the Ordered Systems Lab (a.k.a Order Lab) at University of Michigan, led by Prof. Ryan Huang.</subtitle><entry><title type="html">Launching the OrderLab Blog</title><link href="/blog/2026/02/21/launching-orderlab-blog/" rel="alternate" type="text/html" title="Launching the OrderLab Blog" /><published>2026-02-21T00:00:00-05:00</published><updated>2026-02-21T22:14:27-05:00</updated><id>/blog/2026/02/21/launching-orderlab-blog</id><content type="html" xml:base="/blog/2026/02/21/launching-orderlab-blog/"><![CDATA[<p>We have added a dedicated blog to the lab website to share technical updates in a faster, more narrative format than conference papers.</p>
+
+<p>Posts here will usually cover:</p>
+
+<ul>
+  <li>research ideas in progress,</li>
+  <li>implementation notes from lab systems,</li>
+  <li>paper highlights and context,</li>
+  <li>and student milestones.</li>
+</ul>
+
+<p>For archival milestones and announcements, the <a href="/news/">News</a> page remains the canonical timeline.</p>]]></content><author><name>Ryan Huang</name></author><summary type="html"><![CDATA[We have added a dedicated blog to the lab website to share technical updates in a faster, more narrative format than conference papers.]]></summary></entry><entry><title type="html">Writing Posts for This Site</title><link href="/blog/2026/02/21/writing-posts-for-this-site/" rel="alternate" type="text/html" title="Writing Posts for This Site" /><published>2026-02-21T00:00:00-05:00</published><updated>2026-02-21T11:18:52-05:00</updated><id>/blog/2026/02/21/writing-posts-for-this-site</id><content type="html" xml:base="/blog/2026/02/21/writing-posts-for-this-site/"><![CDATA[<p>Blog entries are standard Jekyll posts. Create a markdown file under <code class="language-plaintext highlighter-rouge">_posts/</code> with this naming pattern:</p>
+
+<p><code class="language-plaintext highlighter-rouge">YYYY-MM-DD-title.md</code></p>
+
+<p>Recommended front matter:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s">Your Post Title</span>
+<span class="na">author</span><span class="pi">:</span> <span class="s">Your Name</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+
+<p>The site will automatically:</p>
+
+<ul>
+  <li>list the post on <code class="language-plaintext highlighter-rouge">/blog/</code>,</li>
+  <li>render it with the post layout,</li>
+  <li>and include the newest posts on the homepage.</li>
+</ul>]]></content><author><name>OrderLab</name></author><summary type="html"><![CDATA[Blog entries are standard Jekyll posts. Create a markdown file under _posts/ with this naming pattern:]]></summary></entry></feed>

@@ -11,6 +11,16 @@
 
   <title>Group Activities</title>
 
+  <script>
+    (function() {
+      var stored = null;
+      try { stored = localStorage.getItem("orderlab-theme"); } catch (e) {}
+      var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      var theme = stored || (prefersDark ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+
   <!-- CSS -->
   <link rel="shortcut icon" href="/assets/favicon.ico">
   <link rel="stylesheet" href="/vendors/bootstrap/bootstrap.min.css">
@@ -19,15 +29,16 @@
   <link rel="stylesheet" href="/vendors/flaticon/flaticon.css" />
   <link rel="stylesheet" href="/vendors/owl-carousel/owl.carousel.min.css">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/modern.css">
   <link rel="stylesheet" href="/assets/css/site.css">
 </head>
 
-  <body>
+  <body class="layout-default page-group-activities">
   	<header class="header_area">
   <div class="main_menu">
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container box_1620">
-        <a class="navbar-brand logo_h" href="/index.html"><img src="/assets/img/logo.png" alt=""></a>
+        <a class="navbar-brand logo_h" href="/"><img src="/assets/img/logo-gray.png" alt="OrderLab"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -36,14 +47,22 @@
         <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
           
           <ul class="nav navbar-nav menu_nav justify-content-end">
-            <li class="nav-item "><a class="nav-link" href="/index.html">Home</a></li>
-            <li class="nav-item "><a class="nav-link" href="/team.html">People</a></li>
-            <li class="nav-item "><a class="nav-link" href="/news.html">News</a></li>
-            <li class="nav-item "><a class="nav-link" href="/pubs.html">Publications</a>
-            <li class="nav-item "><a class="nav-link" href="/projects.html">Projects</a></li>
-            <li class="nav-item "><a class="nav-link" href="/software.html">Software</a></li>
+            <li class="nav-item "><a class="nav-link" href="/">Home</a></li>
+            <li class="nav-item "><a class="nav-link" href="/team/">Team</a></li>
+            <li class="nav-item "><a class="nav-link" href="/pubs/">Publications</a></li>
+            <li class="nav-item "><a class="nav-link" href="/blog/">Blog</a></li>
             <li class="nav-item"><a class="nav-link" href="https://orderlab.io/reading-group" target="_blank">Reading</a></li>
-            <li class="nav-item "><a class="nav-link" href="/join.html">Join</a></li>
+            <li class="nav-item "><a class="nav-link" href="/join/">Join</a></li>
+            <li class="nav-item nav-item--theme">
+              <button
+                class="theme-toggle"
+                type="button"
+                data-theme-toggle
+                aria-label="Toggle theme"
+                aria-pressed="false">
+                <i class="fas fa-adjust theme-toggle__icon" aria-hidden="true"></i>
+              </button>
+            </li>
           </ul>
         </div>
       </div>
@@ -52,15 +71,7 @@
 </header>
 
 
-		<main class="side-main">
-      <section class="hero-banner mb-30px">
-      <div class="container">
-        <div class="hero-banner--sm__content">
-          <h1>Group Activities</h1>
-        </div>
-      </div>
-      </section>
-      <!--================ End banner =================-->
+	<main class="side-main">
   		<section class="section-margin">
   <div class="container">
     <h3>Fall '21 Group Hike</h3>
@@ -96,7 +107,7 @@
 </footer>
 <!-- ================ End footer area ================= -->
 
-		</main>
+	</main>
     <script src="/vendors/jquery/jquery-3.2.1.min.js"></script>
 <script src="/vendors/bootstrap/bootstrap.bundle.min.js"></script>
 <script src="/vendors/owl-carousel/owl.carousel.min.js"></script>
