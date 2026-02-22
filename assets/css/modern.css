@@ -938,11 +938,11 @@ a:hover {
   background: #ffffff;
   box-shadow: var(--shadow-sm);
   padding: 1.15rem 1.2rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 .blog-hub__item:hover {
-  transform: translateY(-2px);
+  transform: none;
   border-color: #c4d6ea;
   box-shadow: var(--shadow-md);
 }
@@ -1447,20 +1447,24 @@ a:hover {
 .newslist li,
 .publications li,
 .team_members_area ul li {
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 .card-feature:hover,
-.single-team-member:hover .meta-text,
 .single_recent_project:hover,
 .blog-card:hover,
 .newslist li:hover,
 .publications li:hover,
-.team_members_area ul li:hover,
-.project-card:hover {
-  transform: translateY(-3px);
+.team_members_area ul li:hover {
+  transform: none;
   box-shadow: var(--shadow-md);
   border-color: #c4d6ea;
+}
+
+.single-team-member:hover .meta-text,
+.project-card:hover {
+  transform: none;
+  box-shadow: var(--shadow-sm);
 }
 
 /* Responsive */
