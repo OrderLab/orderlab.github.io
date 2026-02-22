@@ -3,8 +3,8 @@
 :root {
   --font-body: "Plus Jakarta Sans", sans-serif;
   --font-heading: "Newsreader", ui-serif, Georgia, serif;
-  --bg: #f6f8fb;
-  --bg-soft: #eff3f8;
+  --bg: #f7f8fa;
+  --bg-soft: #f1f3f6;
   --surface: #ffffff;
   --surface-subtle: #f7faff;
   --ink: #111d31;
@@ -39,7 +39,7 @@ body {
   line-height: 1.75;
   letter-spacing: 0.002em;
   text-rendering: optimizeLegibility;
-  background: linear-gradient(180deg, #f8fafc 0%, #f5f7fb 52%, #f2f5f9 100%);
+  background: #f8fafc;
 }
 
 h1,
@@ -150,12 +150,13 @@ a:hover {
 .header_area .navbar {
   margin-top: 0;
   margin-bottom: 0;
-  padding: 10px 14px;
+  padding: 9px 14px;
   border-radius: 0;
-  border: 1px solid #e3e9f1;
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: saturate(1.15) blur(8px);
-  box-shadow: 0 1px 0 rgba(15, 23, 42, 0.04), 0 10px 26px rgba(15, 23, 42, 0.06);
+  border: 0;
+  border-bottom: 1px solid #e6ebf1;
+  background: #ffffff;
+  backdrop-filter: none;
+  box-shadow: none;
 }
 
 .header_area .navbar-brand {
@@ -181,21 +182,21 @@ a:hover {
 
 .header_area .navbar .nav .nav-item .nav-link {
   font-family: var(--font-body);
-  font-size: 0.81rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
+  font-size: 0.79rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   border-radius: 999px;
-  color: #314963;
-  padding: 8px 11px;
+  color: #3b4f66;
+  padding: 7px 10px;
   line-height: 1.2;
   transition: all 0.2s ease;
 }
 
 .header_area .navbar .nav .nav-item:hover .nav-link,
 .header_area .navbar .nav .nav-item.active .nav-link {
-  color: #173f73;
-  background: rgba(42, 91, 215, 0.1);
+  color: #1f3f67;
+  background: rgba(15, 23, 42, 0.05);
 }
 
 .header_area.navbar_fixed .main_menu {
@@ -1631,14 +1632,15 @@ a:hover {
 }
 
 [data-theme="dark"] body {
-  background: linear-gradient(180deg, #0c131d 0%, #0b1119 52%, #0a0f16 100%);
+  background: #0b0f14;
 }
 
 [data-theme="dark"] .header_area .navbar {
-  border-color: rgba(103, 121, 146, 0.38);
-  background: rgba(14, 22, 35, 0.88);
-  backdrop-filter: saturate(1.1) blur(8px);
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.03), 0 14px 30px rgba(0, 0, 0, 0.32);
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  background: #0f141b;
+  backdrop-filter: none;
+  box-shadow: none;
 }
 
 [data-theme="dark"] .header_area .navbar .nav .nav-item .nav-link {
@@ -1648,7 +1650,7 @@ a:hover {
 [data-theme="dark"] .header_area .navbar .nav .nav-item:hover .nav-link,
 [data-theme="dark"] .header_area .navbar .nav .nav-item.active .nav-link {
   color: #ffffff;
-  background: rgba(154, 195, 255, 0.16);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 [data-theme="dark"] .header_area .navbar-brand {
