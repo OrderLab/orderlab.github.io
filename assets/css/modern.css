@@ -209,7 +209,7 @@ a:hover {
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  border-radius: 0;
+  border-radius: var(--radius-xl);
   width: 100%;
   max-width: none;
   margin: 0 auto 28px;
@@ -239,7 +239,7 @@ a:hover {
 }
 
 .hero-banner--sm {
-  border-radius: 0;
+  border-radius: var(--radius-xl);
   width: 100%;
   padding: 2.4rem 0 1.8rem;
 }
@@ -1320,7 +1320,7 @@ a:hover {
 
   .hero-banner {
     width: 100%;
-    border-radius: 0;
+    border-radius: var(--radius-xl);
     padding: 3rem 0 2.2rem;
   }
 
