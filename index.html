@@ -33,7 +33,6 @@ layout: home
       <div class="scope-panel__left">
         <h2>What We Build</h2>
         <p>From runtime checkers to fault injection frameworks, we create tools that make complex system behavior observable and debuggable.</p>
-        <a class="button button-light" href="{{ '/projects/' | relative_url }}">Explore Projects</a>
       </div>
       <div class="scope-panel__right">
         <span class="scope-chip">Operating Systems</span>
@@ -47,6 +46,41 @@ layout: home
   </div>
 </section>
 <!--================ End scope section =================-->
+
+<!--================ Start news preview section =================-->
+<section class="section-margin section-shell">
+  <div class="container">
+    <div class="section-intro text-center">
+      <h2 class="section-intro__title">News</h2>
+    </div>
+    <ul class="home-news-list">
+      <li>
+        <span class="home-news-list__date">Dec 2025</span>
+        <span class="home-news-list__content"><a href="https://osdi.dev/" target="_blank" rel="noopener">Yuzhuo</a> successfully defended his PhD thesis titled <b><i>"Operating System Support for Reliable Software"</i></b> and will join Google after graduation. Congratulations, Dr. Jing!</span>
+      </li>
+      <li>
+        <span class="home-news-list__date">Jul 2025</span>
+        <span class="home-news-list__content"><b><a href="https://github.com/verify-llm/TrainVerify" target="_blank" rel="noopener">TrainVerify</a></b> is accepted to <a href="https://sigops.org/s/conferences/sosp/2025/">SOSP '25</a>! TrainVerify uses equivalence-based verification to provide strong correctness guarantess for the parallelization logic of distributed LLM training.</span>
+      </li>
+      <li>
+        <span class="home-news-list__date">Jul 2025</span>
+        <span class="home-news-list__content"><b><a href="https://github.com/OrderLab/phoenix" target="_blank" rel="noopener">Phoenix</a></b> is accepted to <a href="https://sigops.org/s/conferences/sosp/2025/">SOSP '25</a>! Phoenix provides OS-level support for optimistic recovery and partial state preservation for high-availability software.</span>
+      </li>
+      <li>
+        <span class="home-news-list__date">Jul 2025</span>
+        <span class="home-news-list__content"><b><a href="https://github.com/OrderLab/Atropos" target="_blank" rel="noopener">Atropos</a></b> is accepted to <a href="https://sigops.org/s/conferences/sosp/2025/">SOSP '25</a>! Atropos is an application overload control framework that uses targeted cancellation to maintain tight SLOs.</span>
+      </li>
+      <li>
+        <span class="home-news-list__date">Mar 2025</span>
+        <span class="home-news-list__content"><b><a href="https://github.com/OrderLab/TrainCheck" target="_blank" rel="noopener">TrainCheck</a></b> is accepted to <a href="https://www.usenix.org/conference/osdi25">OSDI '25</a>! TrainCheck automatically infers invariants tailored for DL training and uses these invariants to proactively detect silent training errors.</span>
+      </li>
+    </ul>
+    <div class="text-center mt-4">
+      <a class="button button-light" href="{{ '/news/' | relative_url }}">View All News</a>
+    </div>
+  </div>
+</section>
+<!--================ End news preview section =================-->
 
 <!--================ Start recent projects section =================-->
 <section class="section-margin project-showcase">
@@ -120,6 +154,7 @@ layout: home
   </div>
 </section>
 <!--================ End recent projects section =================-->
+
 
 <!--================ Start blog preview section =================-->
 <section class="section-margin section-shell">
