@@ -64,7 +64,7 @@ h3 {
 }
 
 p {
-  color: var(--ink-subtle);
+  color: var(--ink);
 }
 
 a {
@@ -425,7 +425,7 @@ a:hover {
 
 .scope-panel {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.35fr 0.65fr;
   gap: 22px;
   border: 1px solid var(--line);
   border-radius: var(--radius-xl);
@@ -434,8 +434,37 @@ a:hover {
   padding: 2rem;
 }
 
+.scope-panel--single {
+  grid-template-columns: 1fr;
+}
+
 .scope-panel__left p {
   margin-bottom: 1.15rem;
+}
+
+.scope-focus-list {
+  list-style: none;
+  margin: 0 0 0.85rem;
+  padding: 0;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.scope-focus-list li {
+  border-left: 3px solid #c7d8ee;
+  padding-left: 0.72rem;
+  color: var(--ink-subtle);
+  line-height: 1.6;
+}
+
+.scope-focus-list li strong {
+  color: var(--ink);
+}
+
+.scope-note {
+  font-size: 0.93rem;
+  color: #5d708a;
+  margin-bottom: 0;
 }
 
 .scope-panel__right {
