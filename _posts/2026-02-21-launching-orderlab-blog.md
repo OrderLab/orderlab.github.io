@@ -1,6 +1,6 @@
 ---
 title: Launching the OrderLab Blog
-author: OrderLab
+author: Ryan Huang
 ---
 
 We have added a dedicated blog to the lab website to share technical updates in a faster, more narrative format than conference papers.

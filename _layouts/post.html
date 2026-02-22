@@ -4,26 +4,25 @@
   <body class="layout-post page-{{ page.title | default: 'post' | slugify }}">
     {% include banner.html %}
     <main class="side-main">
-      <section class="hero-banner hero-banner--sm mb-30px">
+      <section class="section-margin blog-post-page">
         <div class="container">
-          <div class="hero-banner--sm__content">
-            <h1>{{ page.title }}</h1>
-            <h4>{{ page.date | date: "%B %-d, %Y" }}</h4>
-          </div>
-        </div>
-      </section>
-      <section class="section-margin">
-        <div class="container">
-          <article class="post-shell">
-            <div class="post-meta">
-              <span><strong>Published:</strong> {{ page.date | date: "%b %-d, %Y" }}</span>
-              {% if page.author %}<span><strong>Author:</strong> {{ page.author }}</span>{% endif %}
-              {% if page.last_modified_at %}<span><strong>Updated:</strong> {{ page.last_modified_at | date: "%b %-d, %Y" }}</span>{% endif %}
-            </div>
-            <div class="single-post-content">
+          <article class="blog-post">
+            <header class="blog-post__header">
+              <p class="blog-post__eyebrow">OrderLab Blog</p>
+              <h1>{{ page.title }}</h1>
+              <div class="blog-post__meta">
+                <span>{{ page.date | date: "%b %-d, %Y" }}</span>
+                {% if page.author %}<span>{{ page.author }}</span>{% endif %}
+                {% if page.last_modified_at %}<span>Updated {{ page.last_modified_at | date: "%b %-d, %Y" }}</span>{% endif %}
+              </div>
+            </header>
+            <div class="blog-post__content">
               {{ content }}
             </div>
-          </article>
+            <footer class="blog-post__footer">
+              <a class="blog-hub__read" href="{{ '/blog/' | relative_url }}">Back to all posts</a>
+            </footer>
+          </article>          
         </div>
       </section>
       {% include footer.html %}

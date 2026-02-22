@@ -2,20 +2,19 @@
 layout: default
 title: Blog
 ---
-<section class="section-margin">
+<section class="section-margin blog-hub">
   <div class="container">
-    <div class="section-intro pb-85px text-center">
-      <h2 class="section-intro__title">OrderLab Blog</h2>
-      <p class="section-intro__subtitle">Technical notes, research context, and lab updates.</p>
-    </div>
+    <header class="blog-hub__head">
+      <h1>OrderLab Research Notes and Updates</h1>
+    </header>
     {% if site.posts.size > 0 %}
-    <div class="blog-grid">
+    <div class="blog-hub__list">
       {% for post in site.posts %}
-      <article class="blog-card">
-        <div class="meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} · {{ post.author }}{% endif %}</div>
+      <article class="blog-hub__item">
+        <div class="blog-hub__meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} · {{ post.author }}{% endif %}</div>
         <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-        <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
-        <a class="button button-light" href="{{ post.url | relative_url }}">Read Post</a>
+        <p>{{ post.excerpt | strip_html | truncate: 190 }}</p>
+        <a class="blog-hub__read" href="{{ post.url | relative_url }}">Read article</a>
       </article>
       {% endfor %}
     </div>
