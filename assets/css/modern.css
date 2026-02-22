@@ -172,6 +172,7 @@ a:hover {
   width: auto;
   display: block;
   filter: none;
+  transition: filter 0.2s ease, opacity 0.2s ease;
 }
 
 .header_area .navbar .nav .nav-item {
@@ -1653,7 +1654,14 @@ a:hover {
 [data-theme="dark"] .header_area .navbar-brand {
   background: transparent;
   border: 0;
+  border-radius: 0;
+  padding: 0;
   box-shadow: none;
+}
+
+[data-theme="dark"] .header_area .navbar-brand img {
+  filter: brightness(0) invert(1) contrast(1.1);
+  opacity: 0.96;
 }
 
 [data-theme="dark"] .theme-toggle {
