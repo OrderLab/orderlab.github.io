@@ -1521,6 +1521,18 @@ a:hover {
   border-color: var(--line);
 }
 
+[data-theme="dark"] .publications .authorlist,
+[data-theme="dark"] .publications .authorlist i,
+[data-theme="dark"] .publications .authorlist a,
+[data-theme="dark"] .publications a.nodec {
+  color: #b7c8de !important;
+}
+
+[data-theme="dark"] .publications .authorlist a:hover,
+[data-theme="dark"] .publications a.nodec:hover {
+  color: #d8e6f9 !important;
+}
+
 [data-theme="dark"] .project-card__media,
 [data-theme="dark"] .hero-visual-card,
 [data-theme="dark"] .project-card__media img.project-logo-fit {
