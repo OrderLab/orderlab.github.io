@@ -245,6 +245,7 @@ achmad:
     name: Achmad Imam Kistijantoro
 ziming:
     name: Ziming Zhou
+    url: https://ziming-zh.github.io
 boyu:
     name: Boyu Xu
 beijie:
@@ -292,3 +293,17 @@ shuangyu:
 baris:
     name: Baris Kasikci
     url: https://homes.cs.washington.edu/~baris
+yinjie:
+    name: Yinjie Zhao
+hang:
+    name: Hang Zhu
+wenxiao:
+    name: Wenxiao Wang
+zhihao:
+    name: Zhihao Bai
+yunzhang:
+    name: Yun Zhang
+shuguang:
+    name: Shuguang Wang
+haibin:
+    name: Haibin Lin

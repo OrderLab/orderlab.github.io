@@ -1,3 +1,23 @@
+- title: 'OpGuard: Bitwise Alignment for Precise and General Debugging of Production LLM Training'
+  conference: OSDI 2026
+  year: 2026
+  authors:
+    - ziming
+    - yinjie
+    - hang
+    - wenxiao
+    - zhihao
+    - yunzhang
+    - shuguang
+    - haibin
+    - ryan
+  links:
+    conference:
+      url: https://www.usenix.org/conference/osdi26
+    paper:
+      url: '#'
+    bib:
+      url: '#'
 - title: 'TrainVerify: Equivalence-Based Verification for Distributed LLM Training'
   conference: SOSP 2025
   year: 2025
@@ -384,7 +404,7 @@
     bib:
       url: paper/leaseos.bib
     software:
-      url: https://orderlab.io/LeaseOS
+      url: https://github.com/OrderLab/leaseos_frameworks_base
     talk:
       url: slides/leaseos_asplos19_slides.pptx
   highlight: Best Paper Award
