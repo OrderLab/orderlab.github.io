@@ -9,7 +9,7 @@
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <title>Software</title>
+  <title>DistDebug-Bench</title>
 
   <script>
     (function() {
@@ -33,7 +33,7 @@
   <link rel="stylesheet" href="/assets/css/site.css">
 </head>
 
-  <body class="layout-default page-software">
+  <body class="layout-default page-distdebug-bench">
   	<header class="header_area">
   <div class="main_menu">
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -74,57 +74,47 @@
 	<main class="side-main">
   		<section class="section-margin">
   <div class="container">
-  	<div class="section-intro pb-85px text-center">
-      <h3 class="section-intro__title">Group GitHub Repository</h3>
-      <p class="section-intro__subtitle">Most of our lab's code repositories are hosted on <a href="https://github.com/OrderLab">GitHub</a>.</p>
+    <div class="section-intro pb-85px text-center">
+      <h2 class="section-intro__title">DistDebug-Bench</h2>
+      <p class="section-intro__subtitle">A benchmark for evaluating code-level diagnosis of distributed-system failures.</p>
     </div>
+    <p>
+      DistDebug-Bench evaluates whether language-model agents can diagnose real
+      distributed-system failures from issue reports, repository snapshots, and
+      project context. The benchmark focuses on finding the source-code blocks
+      that explain a reported failure before the fixing patch is applied.
+    </p>
+    <p>
+      The benchmark contains 120 bug reports from 11 distributed systems and 5
+      programming languages, with gold root-cause labels for code-level
+      evaluation.
+    </p>
+    <p>
+      Benchmark repository:
+      <a href="https://github.com/OrderLab/DSD-Bench">github.com/OrderLab/DSD-Bench</a>
+    </p>
   </div>
 </section>
+
 <section class="section-padding bg-magnolia">
   <div class="container">
     <div class="section-intro pb-85px text-center">
-      <h3 class="section-intro__title">DistDebug-Bench</h3>
-      <p class="section-intro__subtitle">DistDebug-Bench evaluates code-level diagnosis of distributed-system failures. Visit the <a href="/DSD-Bench/">project page</a> or the <a href="https://github.com/OrderLab/DSD-Bench">benchmark repository</a>.</p>
+      <h3 class="section-intro__title">Benchmark Artifacts</h3>
+      <p class="section-intro__subtitle">Issue evidence, repository snapshots, gold root-cause blocks, and evaluation scripts.</p>
     </div>
-  </div>
-</section>
-<section class="section-padding bg-magnolia">
-  <div class="container">
-  	<div class="section-intro pb-85px text-center">
-      <h3 class="section-intro__title">TrainCheck [<a href="/paper/traincheck-osdi25-preprint.pdf">OSDI '25</a>]</h3>
-      <p class="section-intro__subtitle">TrainCheck is an innovative tool for detecting silent errors in deep learning training. We are excited to open-source TrainCheck–explore the project and get involved on <a href="https://github.com/OrderLab/TrainCheck">GitHub</a>!</p>
-    </div>
-  </div>
-</section>
-<section class="section-padding bg-magnolia">
-  <div class="container">
-  	<div class="section-intro pb-85px text-center">
-      <h3 class="section-intro__title">Arthas [<a href="/paper/arthas-eurosys21.pdf">EuroSys '21</a>]</h3>
-      <p class="section-intro__subtitle">The source code is available through this <a href="https://github.com/OrderLab/Arthas">repository</a>.</p>
-    </div>
-  </div>
-</section>
-<section class="section-padding bg-magnolia">
-  <div class="container">
-  	<div class="section-intro pb-85px text-center">
-      <h3 class="section-intro__title">Violet [<a href="/paper/violet-osdi20-preprint.pdf">OSDI '20</a>]</h3>
-      <p class="section-intro__subtitle">Violet consists of multiple components. This <a href="https://github.com/OrderLab/violet">central repository</a> includes the source code repository of each component.</p>
-    </div>
-  </div>
-</section>
-<section class="section-padding">
-  <div class="container">
-  	<div class="section-intro pb-85px text-center">
-      <h3 class="section-intro__title">LeaseOS [<a href="/paper/leaseos-asplos19.pdf">ASPLOS '19</a>]</h3>
-      <p class="section-intro__subtitle">The source code is available through this manifest <a href="https://github.com/OrderLab/leaseos_local_manifests">repository</a>.</p>
-    </div>
-  </div>
-</section>
-<section class="section-margin bg-magnolia">
-  <div class="container">
-  	<div class="section-intro pb-85px text-center">
-      <h3 class="section-intro__title">Panorama [<a href="/paper/panorama-osdi18.pdf">OSDI '18</a>]</h3>
-      <p class="section-intro__subtitle">The source code is available through this <a href="https://github.com/ryanphuang/panorama">repository</a>.</p>
+    <div class="row">
+      <div class="col-md-4">
+        <h4>Reports</h4>
+        <p>Original issue descriptions and metadata from real distributed-system bug reports.</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Labels</h4>
+        <p>Gold source-code blocks that capture the pre-fix root cause for each failure.</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Evaluation</h4>
+        <p>Scoring logic for comparing predicted diagnosis blocks against human labels.</p>
+      </div>
     </div>
   </div>
 </section>
