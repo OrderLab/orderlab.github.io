@@ -9,7 +9,7 @@
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <title>Research Agenda</title>
+  <title>Projects</title>
 
   <script>
     (function() {
@@ -33,7 +33,7 @@
   <link rel="stylesheet" href="/assets/css/site.css">
 </head>
 
-  <body class="layout-default page-research-agenda">
+  <body class="layout-default page-projects">
   	<header class="header_area">
   <div class="main_menu">
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -50,7 +50,7 @@
             <li class="nav-item "><a class="nav-link" href="/">Home</a></li>
             <li class="nav-item "><a class="nav-link" href="/team/">Team</a></li>
             <li class="nav-item "><a class="nav-link" href="/pubs/">Publications</a></li>
-            <li class="nav-item "><a class="nav-link" href="/software/">Software</a></li>
+            <li class="nav-item active"><a class="nav-link" href="/projects/">Projects</a></li>
             <li class="nav-item "><a class="nav-link" href="/blog/">Blog</a></li>
             <li class="nav-item"><a class="nav-link" href="https://orderlab.io/reading-group" target="_blank">Reading</a></li>
             <li class="nav-item "><a class="nav-link" href="/join/">Join</a></li>
@@ -73,159 +73,283 @@
 
 
 	<main class="side-main">
-  		<section class="section-margin">
+  		<section class="project-page-hero">
   <div class="container">
-    <div class="section-intro pb-85px text-center">
-      <h2 class="section-intro__title">Overview</h2>
+    <div class="project-page-hero__media" aria-hidden="true">
+      <img src="/assets/img/project/traincheck_logo.png" alt="">
+      <img src="/assets/img/project/phoenix.png" alt="">
+      <img src="/assets/img/project/xinda.png" alt="">
+      <img src="/assets/img/project/panorama.png" alt="">
     </div>
-    <p>Currently, we have two main lines of investigations. One line is related to rethink availability and fault tolerance in cloud systems.
-    The other is on defensive mobile operating systems to tolerate misbehaving apps.</p>
-  </div>
-</section>
-
-<section class="section-padding bg-magnolia">
-  <div class="container">
-    <div class="section-intro pb-85px text-center">
-      <h3 class="section-intro__title">Towards gray-tolerant cloud systems</h3>
-    </div>
-    <div class="project card-block">
-      <h4 class="card-title">Generating watchdogs to localize gray failure</h4>
-      <div class="card-text">
-        <div class="row">
-          <div class="col-md-3">
-            <img class="project-img" src="/assets/img/project/watchdog.jpg" />
-          </div>
-          <div class="col-md-9">
-            <p>In this work, we advocate that modern software needs intrinsic failure detectors that 
-              are tailored to individual systems and can detect anomalies within a process at finer 
-              granularity. We particularly advocate a notion of intrinsic software watchdogs and propose 
-              an abstraction for it. Among the different styles of watchdogs, we believe watchdogs 
-              that imitate the main program can provide the best combination of completeness, accuracy 
-              and localization for detecting gray failures.
-            </p>
-            <p>
-              We write a position paper on the watchdog abstraction and an early 
-              exploration for automatically generating mimic-type watchdogs. This 
-              <a href="/paper/watchdog-hostos19-preprint.pdf">paper</a> is published at 
-              <a href="https://hotos19.sigops.org/">HotOS 2019</a>.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="project card-block">
-      <h4 class="card-title">Capturing observability to detect gray failures</h4>
-      <div class="card-text">
-        <div class="row">
-          <div class="col-md-3">
-            <img class="project-img" src="/assets/img/project/panorama.jpg" />
-          </div>
-          <div class="col-md-9">
-            <p>In this work, we build on insights from our position paper, particularly
-              that the key trait of gray failure is a form of differential observability.
-              We find that in a highly-interactive cloud system, while gray failure is subtle
-              and ambiguous by itself, the "requesters" in the system often observe the
-              failure symptoms. We build a tool, <b>Panorama</b>, that uses program analysis 
-              and AOP instrumentation to systematically place observability hooks in a system 
-              component, which will report gray failure in other components at runtime.
-            </p>
-            <p>
-              We write a paper that describes this solution and evaluation results. This 
-              <a href="/paper/panorama-osdi18.pdf">paper</a> is published at 
-              <a href="https://www.usenix.org/conference/osdi18">OSDI 2018</a>.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="project card-block">
-      <h4 class="card-title">Modeling and defining gray failures</h4>
-      <div class="card-text">
-        <div class="row">
-          <div class="col-md-3">
-            <img class="project-img" src="/assets/img/project/gray_model.png" />
-          </div>
-          <div class="col-md-9">
-            <p>Cloud scale provides the vast resources necessary to replace failed
-              components, but this is useful only if those failures can be detected.
-              For this reason, the major availability breakdowns and performance
-              anomalies we see in cloud environments tend to be caused by subtle
-              underlying faults, i.e., <b>gray failure</b>. In this work, we present 
-              real-world gray failure examples to
-              understand their characteristics and the risks they pose to cloud
-              systems. Drawing from these data points, we make the first
-              attempt to characterize gray failure with a generic model. We find 
-              that the key trait of gray failure is a form of <b>differential observability</b>.
-            </p>
-            <p>
-              We write a position paper to advocate the importance of gray failure problem
-              and describe our model. This <a href="/paper/grayfailure-hotos17.pdf">paper</a> is published at 
-              <a href="https://www.sigops.org/s/conferences/hotos/2017/">HotOS 2017</a>.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-</section>
-<section class="section-margin">
-  <div class="container">
-    <div class="section-intro pb-85px text-center">
-      <h3 class="section-intro__title">Defensive and utilitarian mobile operating systems</h3>
-    </div>
-    <div class="project card-block">
-      <h4 class="card-title">Lease-based, utilitarian resource management</h4>
-      <div class="card-text">
-        <div class="row">
-          <div class="col-md-3">
-            <img class="project-img img-responsive" src="/assets/img/project/leaseos.jpg" />
-          </div>
-          <div class="col-md-9">
-            <p> Existing OS-level solutions to the mobile app energy misbehavior problem is either 
-              libertarian, which allows apps to hold resources until they are explicitly released, 
-              or authoritarian, which monitors resource usages and throttles excessive usage. 
-              While the authoritarian approach helps reduce energy consumption, it prohibits apps 
-              from taking advantage of the resources to do useful work. In this project, we 
-              explore a missing design point---a utilitarian approach. We adapt the lease mechanism 
-              from distributed systems into a mobile OS resource management abstraction to mitigate 
-              app energy bugs and use utility to make informed lease decisions.
-            </p>
-            <p>
-              Our <a href="/paper/leaseos-asplos19.pdf">paper</a> that describes LeaseOS is published at 
-              <a href="https://asplos-conference.org">ASPLOS 2019</a>. It won <span class="text-info">the Best Paper Award</span>.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="project card-block">
-      <h4 class="card-title">Defending against immature apps</h4>
-      <div class="card-text">
-        <div class="row">
-          <div class="col-md-3">
-            <img class="project-img img-responsive" src="/assets/img/project/defdroid.png" />
-          </div>
-          <div class="col-md-9">
-            <p>Nowadays there's an app for almost anything. Unfortunately, mobile apps are in general
-              weaker in terms of quality compared to traditional software because of developer inexperiences
-              and limited resources. Many apps, despite having useful features, exhibit immature behaviors,
-            e.g., fast battery drain, agressive updates, excessive cellular data usage, notifications.</p>
-
-            <p>In the <b>DefDroid</b> project, we explore OS-level solutions to
-              address the Disruptive App Behavior (DAB). DefDroid is designed to defensively
-              re-act to app misbehavior by taking corrective actions at runtime without
-            compromising app usability.</p>
-            <p>
-              Our <a href="/paper/defdroid-mobisys16.pdf">paper</a> that describes DefDroid is published at 
-              <a href="https://www.sigmobile.org/mobisys/2016/">MobiSys 2016</a>.
-            </p>
-          </div>
-        </div>
+    <div class="project-page-hero__content">
+      <p class="project-page-kicker">Representative Projects</p>
+      <h1>Systems for detecting, tolerating, and recovering from complex failures.</h1>
+      <p>OrderLab builds practical tools for reliable AI training, dependable distributed systems, production debugging, and operating-system support. This page highlights a representative slice of our recent and foundational work.</p>
+      <p>Most of our lab's code repositories are hosted on <a href="https://github.com/OrderLab" target="_blank" rel="noopener">GitHub</a>.</p>
+      <div class="project-page-chips" aria-label="Project focus areas">
+        <span>AI training reliability</span>
+        <span>Distributed systems</span>
+        <span>Fault injection</span>
+        <span>Runtime checking</span>
+        <span>OS support</span>
       </div>
     </div>
   </div>
 </section>
+
+<section class="section-margin project-page-section">
+  <div class="container">
+    <div class="section-intro text-center">
+      <h2 class="section-intro__title">Featured Projects</h2>
+      <p class="section-intro__subtitle">Recent systems and tools that represent the lab's current research directions.</p>
+    </div>
+
+    <div class="project-page-grid">
+      <article class="project-page-card project-page-card--wide">
+        <div class="project-page-card__media">
+          <img class="project-logo-fit" src="/assets/img/project/traincheck_logo.png" alt="TrainCheck">
+        </div>
+        <div class="project-page-card__content">
+          <p class="project-page-card__tag">OSDI 2025</p>
+          <h3>TrainCheck</h3>
+          <p>TrainCheck catches silent errors in deep learning training by learning semantic invariants from sample pipelines and turning them into proactive runtime checks.</p>
+          <div class="project-links" aria-label="TrainCheck links">
+            <a class="project-link-icon" href="/paper/traincheck-osdi25-preprint.pdf" target="_blank" rel="noopener" title="Paper"><i class="fas fa-file-alt" aria-hidden="true"></i><span>Paper</span></a>
+            <a class="project-link-icon" href="https://github.com/OrderLab/TrainCheck" target="_blank" rel="noopener" title="Software"><i class="fab fa-github" aria-hidden="true"></i><span>Software</span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-page-card project-page-card--wide">
+        <div class="project-page-card__media">
+          <img src="/assets/img/project/trainverify.png" alt="TrainVerify figure">
+        </div>
+        <div class="project-page-card__content">
+          <p class="project-page-card__tag">SOSP 2025</p>
+          <h3>TrainVerify</h3>
+          <p>TrainVerify uses equivalence-based verification to check the parallelization logic of distributed LLM training and eliminate subtle correctness bugs.</p>
+          <div class="project-links" aria-label="TrainVerify links">
+            <a class="project-link-icon" href="/paper/trainverify-sosp25.pdf" target="_blank" rel="noopener" title="Paper"><i class="fas fa-file-alt" aria-hidden="true"></i><span>Paper</span></a>
+            <a class="project-link-icon" href="https://github.com/verify-llm/TrainVerify" target="_blank" rel="noopener" title="Software"><i class="fab fa-github" aria-hidden="true"></i><span>Software</span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-page-card">
+        <div class="project-page-card__media">
+          <img src="/assets/img/project/phoenix.png" alt="Phoenix figure">
+        </div>
+        <div class="project-page-card__content">
+          <p class="project-page-card__tag">SOSP 2025</p>
+          <h3>Phoenix</h3>
+          <p>Phoenix introduces OS-level optimistic recovery and partial process state preservation to improve software availability after failures.</p>
+          <div class="project-links" aria-label="Phoenix links">
+            <a class="project-link-icon" href="/paper/phoenix-sosp25.pdf" target="_blank" rel="noopener" title="Paper"><i class="fas fa-file-alt" aria-hidden="true"></i><span>Paper</span></a>
+            <a class="project-link-icon" href="https://github.com/OrderLab/phoenix" target="_blank" rel="noopener" title="Software"><i class="fab fa-github" aria-hidden="true"></i><span>Software</span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-page-card">
+        <div class="project-page-card__media">
+          <img src="/assets/img/project/atropos.png" alt="Atropos figure">
+        </div>
+        <div class="project-page-card__content">
+          <p class="project-page-card__tag">SOSP 2025</p>
+          <h3>Atropos</h3>
+          <p>Atropos mitigates application resource overload with targeted task cancellation, preserving useful work while shedding harmful load.</p>
+          <div class="project-links" aria-label="Atropos links">
+            <a class="project-link-icon" href="/paper/atropos-sosp25.pdf" target="_blank" rel="noopener" title="Paper"><i class="fas fa-file-alt" aria-hidden="true"></i><span>Paper</span></a>
+            <a class="project-link-icon" href="https://github.com/OrderLab/Atropos" target="_blank" rel="noopener" title="Software"><i class="fab fa-github" aria-hidden="true"></i><span>Software</span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-page-card">
+        <div class="project-page-card__media">
+          <img src="/assets/img/project/t2c.png" alt="T2C figure">
+        </div>
+        <div class="project-page-card__content">
+          <p class="project-page-card__tag">OSDI 2025</p>
+          <h3>T2C</h3>
+          <p>T2C derives semantic checkers from existing system tests, transforming developer-written test logic into runtime checks for silent distributed-system failures.</p>
+          <div class="project-links" aria-label="T2C links">
+            <a class="project-link-icon" href="/paper/t2c-osdi25-preprint.pdf" target="_blank" rel="noopener" title="Paper"><i class="fas fa-file-alt" aria-hidden="true"></i><span>Paper</span></a>
+            <a class="project-link-icon" href="https://github.com/OrderLab/T2C" target="_blank" rel="noopener" title="Software"><i class="fab fa-github" aria-hidden="true"></i><span>Software</span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-page-card">
+        <div class="project-page-card__media">
+          <img class="project-xinda-fit" src="/assets/img/project/xinda.png" alt="Xinda figure">
+        </div>
+        <div class="project-page-card__content">
+          <p class="project-page-card__tag">NSDI 2025</p>
+          <h3>Xinda</h3>
+          <p>Xinda combines automated slow-fault testing with lightweight adaptive detection to improve slow-fault tolerance in modern distributed systems.</p>
+          <div class="project-links" aria-label="Xinda links">
+            <a class="project-link-icon" href="/paper/xinda-nsdi25-preprint.pdf" target="_blank" rel="noopener" title="Paper"><i class="fas fa-file-alt" aria-hidden="true"></i><span>Paper</span></a>
+            <a class="project-link-icon" href="https://github.com/OrderLab/xinda" target="_blank" rel="noopener" title="Software"><i class="fab fa-github" aria-hidden="true"></i><span>Software</span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-page-card">
+        <div class="project-page-card__mark">
+          <i class="fas fa-database" aria-hidden="true"></i>
+        </div>
+        <div class="project-page-card__content">
+          <p class="project-page-card__tag">Benchmark</p>
+          <h3>DistDebug-Bench</h3>
+          <p>DistDebug-Bench evaluates code-level diagnosis of distributed-system failures, providing a benchmark for debugging tools on realistic distributed failures.</p>
+          <div class="project-links" aria-label="DistDebug-Bench links">
+            <a class="project-link-icon" href="/distdebug-bench/" title="Project page"><i class="fas fa-external-link-alt" aria-hidden="true"></i><span>Project</span></a>
+            <a class="project-link-icon" href="https://github.com/OrderLab/distdebug-bench" target="_blank" rel="noopener" title="Software"><i class="fab fa-github" aria-hidden="true"></i><span>Software</span></a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section-margin project-page-section project-page-section--tint">
+  <div class="container">
+    <div class="section-intro text-center">
+      <h2 class="section-intro__title">More Representative Systems</h2>
+      <p class="section-intro__subtitle">Selected projects across failure exposure, runtime checking, observability, recovery, and OS resource management.</p>
+    </div>
+
+    <div class="project-mini-grid">
+      <article class="project-mini-card">
+        <div class="project-mini-card__icon"><i class="fas fa-random" aria-hidden="true"></i></div>
+        <p class="project-page-card__tag">SOSP 2024</p>
+        <h3>Anduril</h3>
+        <p>Feedback-driven fault injection that quickly reproduces a target fault-induced production failure in distributed systems.</p>
+        <div class="project-links" aria-label="Anduril links">
+          <a class="project-link-icon" href="/paper/anduril-sosp24.pdf" target="_blank" rel="noopener" title="Paper"><i class="fas fa-file-alt" aria-hidden="true"></i><span>Paper</span></a>
+          <a class="project-link-icon" href="https://github.com/OrderLab/Anduril" target="_blank" rel="noopener" title="Software"><i class="fab fa-github" aria-hidden="true"></i><span>Software</span></a>
+        </div>
+      </article>
+
+      <article class="project-mini-card">
+        <div class="project-mini-card__icon"><i class="fas fa-bug" aria-hidden="true"></i></div>
+        <p class="project-page-card__tag">NSDI 2024</p>
+        <h3>Legolas</h3>
+        <p>State-guided fault injection that infers abstract states from code to expose partial-failure bugs in large distributed systems.</p>
+        <div class="project-links" aria-label="Legolas links">
+          <a class="project-link-icon" href="/paper/legolas-nsdi24-preprint.pdf" target="_blank" rel="noopener" title="Paper"><i class="fas fa-file-alt" aria-hidden="true"></i><span>Paper</span></a>
+          <a class="project-link-icon" href="https://github.com/OrderLab/Legolas" target="_blank" rel="noopener" title="Software"><i class="fab fa-github" aria-hidden="true"></i><span>Software</span></a>
+        </div>
+      </article>
+
+      <article class="project-mini-card">
+        <div class="project-mini-card__icon"><i class="fas fa-tachometer-alt" aria-hidden="true"></i></div>
+        <p class="project-page-card__tag">SOSP 2023</p>
+        <h3>pBox</h3>
+        <p>Application-level mechanisms for pushing performance isolation boundaries into applications.</p>
+        <div class="project-links" aria-label="pBox links">
+          <a class="project-link-icon" href="/paper/pbox-sosp23.pdf" target="_blank" rel="noopener" title="Paper"><i class="fas fa-file-alt" aria-hidden="true"></i><span>Paper</span></a>
+          <a class="project-link-icon" href="https://github.com/OrderLab/pBox" target="_blank" rel="noopener" title="Software"><i class="fab fa-github" aria-hidden="true"></i><span>Software</span></a>
+        </div>
+      </article>
+
+      <article class="project-mini-card">
+        <div class="project-mini-card__icon"><i class="fas fa-check-double" aria-hidden="true"></i></div>
+        <p class="project-page-card__tag">OSDI 2022</p>
+        <h3>OathKeeper</h3>
+        <p>Runtime checking for silent semantic violations in large distributed systems, motivated by failures that escape generic detectors.</p>
+        <div class="project-links" aria-label="OathKeeper links">
+          <a class="project-link-icon" href="/paper/oathkeeper-osdi22.pdf" target="_blank" rel="noopener" title="Paper"><i class="fas fa-file-alt" aria-hidden="true"></i><span>Paper</span></a>
+          <a class="project-link-icon" href="https://github.com/OrderLab/OathKeeper" target="_blank" rel="noopener" title="Software"><i class="fab fa-github" aria-hidden="true"></i><span>Software</span></a>
+        </div>
+      </article>
+
+      <article class="project-mini-card">
+        <div class="project-mini-card__icon"><i class="fas fa-project-diagram" aria-hidden="true"></i></div>
+        <p class="project-page-card__tag">OSDI 2022</p>
+        <h3>Orbit</h3>
+        <p>Operating-system support for safe and efficient auxiliary execution, enabling speculative work without compromising the main process.</p>
+        <div class="project-links" aria-label="Orbit links">
+          <a class="project-link-icon" href="/paper/orbit-osdi22.pdf" target="_blank" rel="noopener" title="Paper"><i class="fas fa-file-alt" aria-hidden="true"></i><span>Paper</span></a>
+          <a class="project-link-icon" href="https://github.com/OrderLab/orbit" target="_blank" rel="noopener" title="Software"><i class="fab fa-github" aria-hidden="true"></i><span>Software</span></a>
+        </div>
+      </article>
+
+      <article class="project-mini-card">
+        <div class="project-mini-card__icon"><i class="fas fa-memory" aria-hidden="true"></i></div>
+        <p class="project-page-card__tag">EuroSys 2021</p>
+        <h3>Arthas</h3>
+        <p>System support for understanding and dealing with hard faults in persistent memory systems.</p>
+        <div class="project-links" aria-label="Arthas links">
+          <a class="project-link-icon" href="/paper/arthas-eurosys21.pdf" target="_blank" rel="noopener" title="Paper"><i class="fas fa-file-alt" aria-hidden="true"></i><span>Paper</span></a>
+          <a class="project-link-icon" href="https://github.com/OrderLab/Arthas" target="_blank" rel="noopener" title="Software"><i class="fab fa-github" aria-hidden="true"></i><span>Software</span></a>
+        </div>
+      </article>
+
+      <article class="project-mini-card">
+        <div class="project-mini-card__icon"><i class="fas fa-cogs" aria-hidden="true"></i></div>
+        <p class="project-page-card__tag">OSDI 2020</p>
+        <h3>Violet</h3>
+        <p>Automated reasoning for detecting specious configuration in large systems with symbolic execution.</p>
+        <div class="project-links" aria-label="Violet links">
+          <a class="project-link-icon" href="/paper/violet-osdi20.pdf" target="_blank" rel="noopener" title="Paper"><i class="fas fa-file-alt" aria-hidden="true"></i><span>Paper</span></a>
+          <a class="project-link-icon" href="https://github.com/OrderLab/violet" target="_blank" rel="noopener" title="Software"><i class="fab fa-github" aria-hidden="true"></i><span>Software</span></a>
+        </div>
+      </article>
+
+      <article class="project-mini-card">
+        <div class="project-mini-card__icon"><i class="fas fa-search" aria-hidden="true"></i></div>
+        <p class="project-page-card__tag">NSDI 2020</p>
+        <h3>OmegaGen</h3>
+        <p>Techniques for understanding, detecting, and localizing partial failures in large system software.</p>
+        <div class="project-links" aria-label="OmegaGen links">
+          <a class="project-link-icon" href="/paper/omegagen-nsdi20.pdf" target="_blank" rel="noopener" title="Paper"><i class="fas fa-file-alt" aria-hidden="true"></i><span>Paper</span></a>
+        </div>
+      </article>
+
+      <article class="project-mini-card">
+        <div class="project-mini-card__image">
+          <img src="/assets/img/project/leaseos.png" alt="LeaseOS">
+        </div>
+        <p class="project-page-card__tag">ASPLOS 2019</p>
+        <h3>LeaseOS</h3>
+        <p>Lease-based mobile OS resource management that mitigates app energy bugs while preserving useful work.</p>
+        <div class="project-links" aria-label="LeaseOS links">
+          <a class="project-link-icon" href="/paper/leaseos-asplos19.pdf" target="_blank" rel="noopener" title="Paper"><i class="fas fa-file-alt" aria-hidden="true"></i><span>Paper</span></a>
+          <a class="project-link-icon" href="https://github.com/OrderLab/leaseos_frameworks_base" target="_blank" rel="noopener" title="Software"><i class="fab fa-github" aria-hidden="true"></i><span>Software</span></a>
+        </div>
+      </article>
+
+      <article class="project-mini-card">
+        <div class="project-mini-card__image">
+          <img src="/assets/img/project/panorama.png" alt="Panorama">
+        </div>
+        <p class="project-page-card__tag">OSDI 2018</p>
+        <h3>Panorama</h3>
+        <p>Program-analysis and instrumentation support for in situ observability, helping requesters detect gray failures in cloud systems.</p>
+        <div class="project-links" aria-label="Panorama links">
+          <a class="project-link-icon" href="/paper/panorama-osdi18.pdf" target="_blank" rel="noopener" title="Paper"><i class="fas fa-file-alt" aria-hidden="true"></i><span>Paper</span></a>
+          <a class="project-link-icon" href="https://github.com/ryanphuang/panorama" target="_blank" rel="noopener" title="Software"><i class="fab fa-github" aria-hidden="true"></i><span>Software</span></a>
+        </div>
+      </article>
+
+      <article class="project-mini-card">
+        <div class="project-mini-card__image">
+          <img src="/assets/img/project/defdroid.png" alt="DefDroid">
+        </div>
+        <p class="project-page-card__tag">MobiSys 2016</p>
+        <h3>DefDroid</h3>
+        <p>A defensive mobile OS approach that reacts to disruptive app behavior at runtime without compromising app usability.</p>
+        <div class="project-links" aria-label="DefDroid links">
+          <a class="project-link-icon" href="/paper/defdroid-mobisys16.pdf" target="_blank" rel="noopener" title="Paper"><i class="fas fa-file-alt" aria-hidden="true"></i><span>Paper</span></a>
+          <a class="project-link-icon" href="https://defdroid.github.io" target="_blank" rel="noopener" title="Project page"><i class="fas fa-external-link-alt" aria-hidden="true"></i><span>Project</span></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
     	<!-- ================ Start footer area ================= -->
 <footer class="footer-area section-gap">
 <div class="container">
@@ -233,7 +357,7 @@
     <p class="footer-text m-0 col-lg-8 col-md-12">
       Copyright &copy; OrderLab 2017-<script>
  document.write(new Date().getFullYear());
-      </script> All rights reserved. | Last updated 2025-04-30 22:19:44 -0400.
+      </script> All rights reserved. | Last updated 2026-07-12 10:00:03 -0400.
     </p>
   </div>
 </div>
