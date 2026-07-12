@@ -15,9 +15,11 @@
     conference:
       url: https://www.usenix.org/conference/osdi26
     paper:
-      url: '#'
+      url: paper/opguard-osdi26.pdf
     bib:
-      url: '#'
+      url: paper/opguard-osdi26.bib
+    web:
+      url: https://orderlab.io/OpGuard
 - title: 'TrainVerify: Equivalence-Based Verification for Distributed LLM Training'
   conference: SOSP 2025
   year: 2025
