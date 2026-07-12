@@ -4,7 +4,19 @@ on:
   push:
     branches:
       - main
+  # Triggered after leaseos-www publishes a new build.
+  repository_dispatch:
+    types:
+      - leaseos-updated
   workflow_dispatch:
+
+# Prevent two runs in this repository from publishing simultaneously.
+concurrency:
+  group: orderlab-pages
+  cancel-in-progress: false
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -29,6 +41,24 @@ jobs:
 
       - name: Build site with Jekyll
         run: bundle exec jekyll build
+
+      - name: Checkout prebuilt LeaseOS website
+        uses: actions/checkout@v4
+        with:
+          repository: orderlab/leaseos-www
+          ref: gh-pages
+          path: leaseos-built
+
+      - name: Add LeaseOS to the main site
+        run: |
+          rm -rf _site/LeaseOS
+          mkdir -p _site/LeaseOS
+
+          # Exclude Git metadata from the published site.
+          rsync -a \
+            --exclude='.git' \
+            --exclude='.github' \
+            leaseos-built/ _site/LeaseOS/
 
       - name: Deploy to GitHub pages
         uses: peaceiris/actions-gh-pages@v3
