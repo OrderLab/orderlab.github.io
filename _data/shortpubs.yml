@@ -18,8 +18,11 @@
       url: paper/opguard-osdi26.pdf
     bib:
       url: paper/opguard-osdi26.bib
+    talk:
+      url: slides/opguard_osdi26_slides.pdf
     web:
       url: https://orderlab.io/OpGuard
+  highlight: Best Paper Nominee
 - title: 'TrainVerify: Equivalence-Based Verification for Distributed LLM Training'
   conference: SOSP 2025
   year: 2025
