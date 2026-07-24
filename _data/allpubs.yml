@@ -1,3 +1,33 @@
+- title: 'LiteLib: Containing Failure Impact for Stateful Applications with Compact Replicas'
+  conference: NSDI 2027
+  year: 2026
+  authors:
+    - yichen
+    - sitefan
+    - rishika
+    - poyuhou
+    - maizhe
+    - ryan
+  links:
+    conference:
+      url: https://www.usenix.org/conference/nsdi27
+    paper:
+      url: '#'
+- title: 'BRAIN: A Unified and Centralized Approach to Automated Outage Declaration at Azure Scale'
+  conference: NSDI 2027
+  year: 2026
+  authors:
+    - cong
+    - youjiang
+    - chang
+    - ryan
+    - yingnong
+  show_et_al: true
+  links:
+    conference:
+      url: https://www.usenix.org/conference/nsdi27
+    paper:
+      url: '#'
 - title: 'OpGuard: Bitwise Alignment for Precise and General Debugging of Production LLM Training'
   conference: OSDI 2026
   year: 2026
