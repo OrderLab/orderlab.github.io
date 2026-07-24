@@ -1593,6 +1593,24 @@ a:hover {
   font-size: 0.95rem;
 }
 
+.team_members_area ul.phd-alumni-details {
+  display: block;
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin-top: 0.35rem;
+}
+
+.team_members_area ul.phd-alumni-details li {
+  list-style: disc;
+  border: 0;
+  background: transparent;
+  padding: 0;
+}
+
+.team_members_area ul.phd-alumni-details li + li {
+  margin-top: 0.2rem;
+}
+
 /* News page */
 .newslist {
   list-style: none;
@@ -2271,6 +2289,17 @@ a:hover {
 
 [data-theme="dark"] .footer-area {
   background: linear-gradient(180deg, #0b1628, #070f1a);
+}
+
+.team_members_area ul.phd-alumni-details li,
+.team_members_area ul.phd-alumni-details li:hover,
+[data-theme="dark"] .team_members_area ul.phd-alumni-details li,
+[data-theme="dark"] .team_members_area ul.phd-alumni-details li:hover {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  transform: none;
+  transition: none;
 }
 
 @media (max-width: 991px) {
