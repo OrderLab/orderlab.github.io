@@ -1,3 +1,21 @@
+- title: 'DistDebug-Bench: Can LLM Agents Diagnose Bugs in Distributed Systems?'
+  conference: 'NeurIPS 2026 (Evaluations & Datasets Track)'
+  year: 2026
+  authors:
+    - yuxuan
+    - chenglin
+    - johnrose
+    - masonmiller
+    - ruthesh
+    - juntao
+    - yinwei
+    - jiahao
+    - ryan
+  links:
+    conference:
+      url: https://neurips.cc/Conferences/2026
+    paper:
+      url: '#'
 - title: 'LiteLib: Containing Failure Impact for Stateful Applications with Compact Replicas'
   conference: NSDI 2027
   year: 2026
