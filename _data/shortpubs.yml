@@ -16,7 +16,7 @@
       url: https://neurips.cc/Conferences/2026
     paper:
       url: '#'
-- title: 'LiteLib: Containing Failure Impact for Stateful Applications with Compact Replicas'
+- title: 'LiteLib: Containing Cascading Failures in Stateful Services with Lite Replicas'
   conference: NSDI 2027
   year: 2026
   authors:
@@ -31,6 +31,9 @@
       url: https://www.usenix.org/conference/nsdi27
     paper:
       url: '#'
+    software:
+      url: https://github.com/OrderLab/LiteLib
+
 - title: 'BRAIN: A Unified and Centralized Approach to Automated Outage Declaration at Azure Scale'
   conference: NSDI 2027
   year: 2026
@@ -70,6 +73,8 @@
       url: slides/opguard_osdi26_slides.pdf
     web:
       url: https://orderlab.io/OpGuard
+    software:
+      url: https://github.com/OrderLab/OpGuard
   highlight: Best Paper Nominee
 - title: 'TrainVerify: Equivalence-Based Verification for Distributed LLM Training'
   conference: SOSP 2025
