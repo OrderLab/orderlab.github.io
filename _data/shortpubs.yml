@@ -1,5 +1,5 @@
 - title: 'DistDebug-Bench: Can LLM Agents Diagnose Bugs in Distributed Systems?'
-  conference: 'NeurIPS 2026 (Evaluations & Datasets Track)'
+  conference: 'NeurIPS 2026 (ED Track)'
   year: 2026
   authors:
     - yuxuan
@@ -15,7 +15,15 @@
     conference:
       url: https://neurips.cc/Conferences/2026
     paper:
-      url: '#'
+      url: paper/distdebugbench-neurips26.pdf
+    bib:
+      url: paper/distdebugbench.bib
+    software:
+      url: https://github.com/OrderLab/distdebug-bench
+    web:
+      url: https://distdebug.com/
+    arxiv:
+      url: https://arxiv.org/abs/2611.03523
 - title: 'LiteLib: Containing Cascading Failures in Stateful Services with Lite Replicas'
   conference: NSDI 2027
   year: 2026
