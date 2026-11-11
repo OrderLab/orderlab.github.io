@@ -38,7 +38,9 @@
     conference:
       url: https://www.usenix.org/conference/nsdi27
     paper:
-      url: '#'
+      url: paper/litelib-nsdi27-preprint.pdf
+    bib:
+      url: paper/litelib-nsdi27.bib
     software:
       url: https://github.com/OrderLab/LiteLib
 - title: 'BRAIN: A Unified and Centralized Approach to Automated Outage Declaration at Azure Scale'
